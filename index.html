@@ -1,324 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Matheus Carvalho</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matheus Vinicius Carvalho — Software Engineer | Dados | IA | AgroTech</title>
+<meta name="description" content="Portfólio de Matheus Vinicius Carvalho: desenvolvimento, dados, IA, automação e AgroTech.">
+<meta name="theme-color" content="#0a0c0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
 </head>
-
 <body>
-    
-<div id="particles-js"></div>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
 
-<header class="hero">
-
-<img src="assets/profile/matheus2.jpg" class="foto">
-
-<h1>Matheus Vinicius Carvalho</h1>
-
-<p class="hero-text">
-
-Acredito que dados contam histórias.
-
-Estou em constante aprendizado na área de tecnologia e busco evoluir na forma como transformo informações em insights que apoiam decisões.
-
-Sou estudante de Engenharia de Software e venho desenvolvendo experiências com análise de dados, automação de processos e criação de soluções, sempre aberto a aprender, explorar novas áreas e gerar valor através da tecnologia.
-
-</p>
-
-<a href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" class="botao">
-Ver meu LinkedIn
-</a>
-
-<a href="https://github.com/matheusvccarvalho" target="_blank" class="botao">
-Ver meu GitHub
-</a>
-
-<p>Email para contato:</p>
-
-<a href="mailto:matheusccarvalhoads@gmail.com" class="email">
-matheusccarvalhoads@gmail.com
-</a>
-
-</a>
-
+<header class="nav" id="nav">
+  <a class="logo" href="#inicio" aria-label="Início"><span>MV</span>C</a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#jornada">Jornada</a><a href="#projetos">Projetos</a><a href="#skills">Skills</a><a href="#certificados">Certificados</a><a href="#contato">Contato</a>
+  </nav>
 </header>
 
-<section>
-
-<h2>Minha Jornada</h2>
-
-<p class="sobre">
-
-Minha curiosidade por tecnologia começou cedo, e durante minha
-formação em Engenharia de Software passei a me interessar cada vez mais pela área de dados e desenvolvimento.
-
-Ao longo desse processo, venho aprendendo como a análise de dados pode ajudar a identificar padrões, melhorar processos e apoiar decisões.
-
-Atualmente, busco evoluir no desenvolvimento de soluções utilizando Python, Java , Power BI e bancos de dados, sempre aberto a novos aprendizados e desafios.
-</p>
-
+<main id="main">
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="pulse"></span>Construindo enquanto aprendo</p>
+    <h1>Matheus Vinicius <em>Carvalho</em></h1>
+    <p class="role">Software Engineer</p>
+    <p class="tags">Dados • Desenvolvimento • IA • Java</p>
+    <blockquote class="quote">“Acredito que dados contam histórias.”</blockquote>
+    <p class="lead">Estudante de Engenharia de Software. Gosto de transformar dados em decisão e problemas em código, e levo isso para onde faz diferença, inclusive o agronegócio.</p>
+    <div class="cta"><a class="btn primary" href="#projetos">Ver projetos <span>→</span></a><a class="btn" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+  </div>
+  <div class="hero-visual">
+    <figure class="photo hud">
+      <img src="assets/profile/matheus2.jpg" alt="Foto de Matheus Vinicius Carvalho">
+      <figcaption>Engenharia de Software · UMC</figcaption>
+    </figure>
+    <div class="scene hud" aria-label="Cenário: campo, sensor, dados, dashboard e decisão">
+      <button class="why-btn" id="whyBtn" aria-label="Por que AgroTech?">?</button>
+      <svg viewBox="0 0 560 230" role="img" aria-label="Personagem caminhando entre o campo e o dashboard de dados">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2ee59d"/><stop offset="1" stop-color="#b6f34a"/></linearGradient></defs>
+        <g stroke="#2ee59d" stroke-opacity=".35" fill="none"><path d="M0 170H560"/><path d="M0 190H560" stroke-opacity=".18"/></g>
+        <g class="crops" stroke="#2ee59d" stroke-width="2" stroke-linecap="round"><path d="M18 168v-14M34 168v-18M50 168v-14M66 168v-18M82 168v-14M98 168v-18M114 168v-14"/></g>
+        <g class="sensor"><path d="M150 168v-46" stroke="#e9efe9" stroke-width="3"/><circle cx="150" cy="116" r="7" fill="#b6f34a"/><circle class="ring" cx="150" cy="116" r="7" fill="none" stroke="#b6f34a"/></g>
+        <path class="flow" d="M150 116C230 60 290 60 360 100S430 100 440 90" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="4 7"/>
+        <g class="tractor"><rect x="20" y="140" width="34" height="14" rx="3" fill="#1b221e" stroke="#2ee59d"/><circle cx="26" cy="158" r="7" fill="#0a0c0b" stroke="#e9efe9"/><circle cx="50" cy="160" r="4.5" fill="#0a0c0b" stroke="#e9efe9"/></g>
+        <g transform="translate(360 60)"><rect width="150" height="108" rx="8" fill="#101512" stroke="#2ee59d" stroke-opacity=".6"/><g fill="url(#g)"><rect class="bar" x="16" y="62" width="14" height="30"/><rect class="bar b2" x="40" y="44" width="14" height="48"/><rect class="bar b3" x="64" y="52" width="14" height="40"/><rect class="bar b4" x="88" y="28" width="14" height="64"/></g><path d="M16 24h70" stroke="#e9efe9" stroke-opacity=".5"/><circle cx="124" cy="30" r="10" fill="none" stroke="#b6f34a" stroke-width="3" stroke-dasharray="40 24"/></g>
+        <g class="avatar"><circle cx="0" cy="138" r="8" fill="#e9efe9"/><path d="M-9 148h18v18h-18z" fill="#2ee59d"/><path class="leg l1" d="M-4 166v10"/><path class="leg l2" d="M4 166v10"/></g>
+        <g font-family="JetBrains Mono,monospace" font-size="10" fill="#8a968f"><text x="14" y="214">CAMPO</text><text x="128" y="214">SENSOR</text><text x="248" y="214">DADOS</text><text x="372" y="214">DASHBOARD</text><text x="478" y="214">DECISÃO</text></g>
+      </svg>
+    </div>
+  </div>
 </section>
 
-<section>
-
-<h2>Momentos que marcaram minha jornada</h2>
-
-<div class="momentos">
-
-<div class="momento">
-
-<img src="assets/momentos/apresentacao_ia.jpg">
-
-<h3>Apresentação sobre Sofware de Gestão de Estoque</h3>
-
-<p>
-
-Durante o primeiro ano da faculdade apresentei um trabalho
-sobre nosso Software de Automação e Gerenciamento de Estoque com Radio Frquency Identication(RFID),
-e a Internet das coisas(IOT), dessa maneira otimizamos processos Logísticos,
-e garantimos a manter a melhor organização com tecnologia aos nossos clientes.
-Uma grande oportunidade de ser Product Owner desse projeto.
-
-Essa experiência reforçou meu interesse pela área de tecnologia.
-
-</p>
-
-</div>
-
-<div class="momento">
-
-<img src="assets/momentos/ribeirao.jpg">
-
-<h3>Viagem Técnica para Ribeirão Preto</h3>
-
-<p>
-
-Em 2025 viajei sozinho da Zona Leste de São Paulo até Ribeirão Preto para participar do Vision Tech,
-um evento focado em inovação, tecnologia e dados aplicados ao agronegócio.
-Durante o evento acompanhei palestras e apresentações sobre o uso de análise de dados,
-inteligência artificial e IoT para otimizar a produção no campo e apoiar a tomada de decisão no setor agro.
-
-</p>
-
-</div>
-
-<div class="momento">
-
-<img src="assets/momentos/prefeitura.jpg">
-
-<h3>Reconhecimento da Prefeitura de Suzano</h3>
-
-<p>
-
-Recebi uma carta de reconhecimento pela dedicação
-e comprometimento demonstrados durante minha
-trajetória profissional, atendendo com muita seriedade e empenho
-mais de 1000 cidadãos suzanenses e empresas municipais a regularização de dividas.
-
-
-</p>
-
-</div>
-
-
-<div class="momento">
-
-<img src="assets/momentos/agrishow.jpg">
-
-<h3>Experiência na Agrishow 2026</h3>
-
-<p>
-
-Participar da Agrishow 2026 foi um marco na minha jornada
-profissional e pessoal. Tive a oportunidade de vivenciar de perto
-as principais inovações do agronegócio, acompanhando grandes
-empresas como John Deere, Case IH, Massey Ferguson e Jacto.
-
-Durante a feira, observei como dados, automação e tecnologia
-estão transformando o campo, desde máquinas altamente
-conectadas até soluções inteligentes para gestão agrícola.
-
-Essa experiência fortaleceu ainda mais meu interesse em unir
-tecnologia e agronegócio, com foco em análise de dados para
-otimizar operações e apoiar a tomada de decisão no campo.
-
-</p>
-
-</div>
-
-</div>
-
+<section class="stats" aria-label="Indicadores">
+  <div class="stat"><b data-count="13">0</b><span>Certificados</span></div>
+  <div class="stat"><b data-count="6">0</b><span>Projetos</span></div>
+  <div class="stat"><b data-count="4">0</b><span>Momentos marcantes</span></div>
+  <div class="stat chips"><span>Python</span><span>Java</span><span>Power BI</span><span>MySQL</span></div>
 </section>
 
-<section>
-
-<section>
-
-<h2>Projetos</h2>
-
-<div class="projetos">
-
-<div class="projeto">
-<img src="assets/projetos/conversor.jpg">
-
-<p class="descricao">
-Conversor de arquivos multifuncional inspirado no SmallPDF, permitindo transformar PDFs em Word, Excel, além de manipular arquivos ZIP. O sistema possui interface moderna, temas personalizados e foco em produtividade.
-</p>
-
-<a href="https://github.com/matheusvccarvalho/Conversor_Arquivos/releases/tag/1.0" target="_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-<div class="projeto">
-<img src="assets/projetos/sistema_orcamento.jpg">
-
-<p class="descricao">
-Sistema de orçamento automotivo integrado com Cilia e Audatex, permitindo cálculo automático de valores, análise percentual e organização de serviços. Desenvolvido com foco em agilidade e clareza para o usuário.
-</p>
-
-<a href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos/releases" target="_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-<div class="projeto">
-<img src="assets/projetos/dashboard_johndeere.jpg">
-
-<p class="descricao">
-Dashboard de vendas inspirado na John Deere, com foco em análise de desempenho de máquinas agrícolas, ranking Top 5, indicadores de faturamento e visual moderno voltado ao agronegócio.
-</p>
-
-<a href="https://lnkd.in/dgAeuK5v" target="_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-<div class="projeto">
-<img src="assets/projetos/estoque.jpg">
-
-<p class="descricao">
-Sistema de Gestão de Estoque desenvolvido em Java com operações completas de CRUD (cadastro, consulta, atualização e exclusão). O sistema possui integração com banco de dados e foco em organização e controle de produtos.
-</p>
-
-<a href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-<div class="projeto">
-<img src="assets/projetos/agro_marketplace.jpg">
-
-<p class="descricao">
-Sistema web para gestão de uma pequena concessionária de tratores, desenvolvido com arquitetura MVC e padrão DAO. Permite controle de estoque, status de vendas e organização de máquinas agrícolas.
-</p>
-
-<a href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-<div class="projeto">
-<img src="assets/projetos/agrishow_apresentacao.jpg">
-
-<p class="descricao">
-Apresentação com análises e insights da Agrishow 2026, explorando tendências, tecnologia e uso de dados no agronegócio.
-</p>
-
-<a href="https://github.com/matheusvccarvalho/Agrishow-/blob/main/Agrishow%202026/Projeto%20Agrishow%202026.pdf"_blank" class="botao">
-Ver no GitHub
-</a>
-</div>
-
-</div>
-
+<section id="codigo" class="sec">
+  <p class="kicker">// MEU CÓDIGO</p>
+  <h2>Código que eu <em>publico</em></h2>
+  <div class="gh rv" id="gh">
+    <div class="gh-bar"><span class="dots"><i></i><i></i><i></i></span><a href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">github.com/matheusvccarvalho</a></div>
+    <div class="gh-body">
+      <div class="gh-side">
+        <img id="ghAv" alt="" width="72" height="72" hidden>
+        <h3 id="ghName">matheusvccarvalho</h3>
+        <p class="note">Software Engineer</p>
+        <div class="langs" id="ghLangs"><span>Python</span><span>Java</span><span>Power BI</span></div>
+        <p class="note" id="ghStat"></p>
+        <a class="btn primary sm" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">Ver GitHub <span>→</span></a>
+      </div>
+      <div class="gh-main">
+        <h4>Repositórios</h4>
+        <ul class="repos" id="ghRepos">
+          <li><a href="https://github.com/matheusvccarvalho/Conversor_Arquivos" target="_blank" rel="noopener noreferrer">Conversor_Arquivos</a></li>
+          <li><a href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos" target="_blank" rel="noopener noreferrer">Calculadora_Orcamentos</a></li>
+          <li><a href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Projeto_Shibata</a></li>
+          <li><a href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Projeto_Gerenciamento_Maquinas</a></li>
+          <li><a href="https://github.com/matheusvccarvalho/Agrishow-" target="_blank" rel="noopener noreferrer">Agrishow-</a></li>
+        </ul>
+        <div id="ghAct" hidden><h4>Atividade pública recente</h4><div class="heat" id="ghHeat" role="img" aria-label="Mapa de atividade pública recente no GitHub"></div><p class="note" id="ghNote"></p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<h2>Skills</h2>
-
-<div class="skills">
-
-<img src="assets/skills/python.png">
-
-<img src="assets/skills/powerbi.png">
-
-<img src="assets/skills/excel.png">
-
-<img src="assets/skills/mysql.png">
-
-<img src="assets/skills/pandas.png">
-
-<img src="assets/skills/java.png">
-
-<img src="assets/skills/ibm.png">
-
-</div>
-
+<section id="sobre" class="sec">
+  <p class="kicker">// 01 · SOBRE</p>
+  <h2>Tecnologia que resolve <em>problemas reais</em></h2>
+  <div class="about">
+    <div>
+      <p class="mark">Curiosidade → código → resultado.</p>
+      <p>Minha curiosidade por tecnologia começou cedo. Durante a formação em Engenharia de Software, passei a me interessar cada vez mais por dados e desenvolvimento.</p>
+      <p>Aprendo como a análise de dados ajuda a identificar padrões, melhorar processos e apoiar decisões. Hoje evoluo no desenvolvimento de soluções com Python, Java, Power BI e bancos de dados, sempre aberto a novos aprendizados e desafios. Meu diferencial é o interesse pelo agronegócio: é onde mais gosto de aplicar tecnologia e dados.</p>
+      <div class="mission hud"><b>MISSION</b><p>Construir soluções usando tecnologia e dados para resolver problemas reais.</p></div>
+    </div>
+    <div class="terminal hud" id="term" aria-label="Terminal decorativo"><div class="dots"><i></i><i></i><i></i></div><pre id="termOut" aria-hidden="true"></pre></div>
+  </div>
 </section>
 
-<section>
+<section id="jornada" class="sec">
+  <p class="kicker">// 02 · JORNADA</p>
+  <h2>Minha jornada <em>até aqui</em></h2>
+  <ol class="path">
+    <li class="rv"><b>2024</b><h3>Primeiras experiências</h3><p>Summit UMC 2024, com desenvolvimento e apresentação de software.</p></li>
+    <li class="rv"><b>2025</b><h3>Dados + tecnologia</h3><p>Vision Tech em Ribeirão Preto e Summit UMC 2025, aproximando dados, IA e agronegócio.</p></li>
+    <li class="rv"><b>2026</b><h3>AgroTech + desenvolvimento</h3><p>Agrishow 2026, programa START da TOTVS e projetos que unem dados, software e campo.</p></li>
+  </ol>
 
-<h2>Certificados</h2>
-
-<ul class="certificados">
-
-<li><a href="assets/certificados/python.pdf" target="_blank">Python</a></li>
-
-<li><a href="assets/certificados/powerbi.pdf" target="_blank">Power BI</a></li>
-
-<li><a href="assets/certificados/automacao.pdf" target="_blank">Automação</a></li>
-
-<li><a href="assets/certificados/googleia.pdf" target="_blank">Google AI Foundations</a></li>
-
-<li><a href="assets/certificados/pacoteoffice.pdf" target="_blank">Pacote Office</a></li>
-
-<li><a href="assets/certificados/summit2024.pdf" target="_blank">Summit UMC 2024 – Desenvolvimento e Apresentação de Software</a></li>
-
-<li><a href="assets/certificados/summit2025.pdf" target="_blank">Summit UMC 2025 – Desenvolvimento e Apresentação de Software</a></li>
-    
-<li><a href="assets/certificados/ExcelAnalysis.pdf" target="_blank">Excel Fundamentals for Data Analysis</a></li>
-    
-<li><a href="assets/certificados/ExcelBasico.pdf" target="_blank">Excel Básico</a></li>
-
-<li><a href="assets/certificados/VisionAgro.pdf" target="_blank">Vision Tech Summit Agro 2025</a></li>
-
-<li><a href="assets/certificados/ibm.pdf" target="_blank">Introduction to Artificial Intelligence (AI) - IBM</a></li>
-
-<li><a href="assets/certificados/iagoogle.pdf" target="_blank">AI Fundamentals - Google</a></li>
-
-<li><a href="assets/certificados/totvs.pdf" target="_blank">Programa START 2026 – Jornada DEV Negócios - TOTVS Paulista</a></li>
-
-</ul>
-
+  <h3 class="sub">Momentos que marcaram minha jornada</h3>
+  <div class="story">
+    <article class="moment rv">
+      <img src="assets/momentos/apresentacao_ia.jpg" alt="Apresentação sobre o software de gestão de estoque" loading="lazy">
+      <div><span class="tag">1º ano · Software</span><h3>Apresentação sobre Software de Gestão de Estoque</h3>
+      <p>No primeiro ano da faculdade, apresentei nosso software de automação e gerenciamento de estoque com RFID (Radio Frequency Identification) e IoT (Internet das Coisas), otimizando processos logísticos e mantendo a organização dos clientes com tecnologia. Foi uma grande oportunidade de atuar como Product Owner do projeto e reforçou meu interesse pela área.</p></div>
+    </article>
+    <article class="moment rv">
+      <img src="assets/momentos/ribeirao.jpg" alt="Vision Tech em Ribeirão Preto" loading="lazy">
+      <div><span class="tag">2025 · Evento</span><h3>Viagem Técnica para Ribeirão Preto / Vision Tech</h3>
+      <p>Em 2025, viajei sozinho da Zona Leste de São Paulo até Ribeirão Preto para o Vision Tech, evento de inovação, tecnologia e dados aplicados ao agronegócio. Acompanhei palestras sobre análise de dados, inteligência artificial e IoT para otimizar a produção no campo e apoiar decisões no setor agro.</p></div>
+    </article>
+    <article class="moment rv">
+      <img src="assets/momentos/prefeitura.jpg" alt="Carta de reconhecimento da Prefeitura de Suzano" loading="lazy">
+      <div><span class="tag">Reconhecimento</span><h3>Reconhecimento da Prefeitura de Suzano</h3>
+      <p>Recebi uma carta de reconhecimento pela dedicação e pelo comprometimento ao longo da minha trajetória profissional, atendendo com seriedade e empenho mais de 1000 cidadãos suzanenses e empresas municipais na regularização de dívidas.</p></div>
+    </article>
+    <article class="moment rv">
+      <img src="assets/momentos/agrishow.jpg" alt="Agrishow 2026" loading="lazy">
+      <div><span class="tag">2026 · AgroTech</span><h3>Experiência na Agrishow 2026</h3>
+      <p>A Agrishow 2026 foi um marco profissional e pessoal. Vivenciei de perto as inovações do agronegócio, acompanhando empresas como John Deere, Case IH, Massey Ferguson e Jacto, e observei como dados, automação e tecnologia transformam o campo, de máquinas conectadas a soluções inteligentes de gestão agrícola. Isso fortaleceu meu interesse em unir tecnologia e agro, com foco em análise de dados.</p></div>
+    </article>
+  </div>
 </section>
 
-<footer>
+<section id="projetos" class="sec">
+  <p class="kicker">// 03 · PROJETOS</p>
+  <h2>Projetos que parecem <em>produtos</em></h2>
+  <div class="grid">
+    <article class="card rv"><img src="assets/projetos/conversor.jpg" alt="Conversor de arquivos" loading="lazy"><div class="cb"><div class="cats"><span>AUTOMATION</span><span>SOFTWARE</span></div><h3>Conversor de Arquivos</h3><p>Conversor multifuncional inspirado no SmallPDF: transforma PDFs em Word e Excel e manipula arquivos ZIP, com interface moderna, temas personalizados e foco em produtividade.</p><div class="tt"><span>PDF</span><span>Word</span><span>Excel</span><span>ZIP</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Conversor_Arquivos/releases/tag/1.0" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+    <article class="card rv"><img src="assets/projetos/sistema_orcamento.jpg" alt="Sistema de orçamento automotivo" loading="lazy"><div class="cb"><div class="cats"><span>BUSINESS</span><span>AUTOMATION</span></div><h3>Sistema de Orçamento Automotivo</h3><p>Integrado com Cilia e Audatex, calcula valores automaticamente, analisa percentuais e organiza serviços, com foco em agilidade e clareza para o usuário.</p><div class="tt"><span>Cilia</span><span>Audatex</span><span>Cálculo automático</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos/releases" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+    <article class="card rv"><img src="assets/projetos/dashboard_johndeere.jpg" alt="Dashboard John Deere" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>DATA</span></div><h3>Dashboard de Vendas John Deere</h3><p>Dashboard inspirado na John Deere para analisar o desempenho de máquinas agrícolas, com ranking Top 5, indicadores de faturamento e visual moderno voltado ao agronegócio.</p><div class="tt"><span>Dashboard</span><span>Top 5</span><span>Faturamento</span></div><a class="btn sm" href="https://lnkd.in/dgAeuK5v" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a></div></article>
+    <article class="card rv"><img src="assets/projetos/estoque.jpg" alt="Sistema de gestão de estoque" loading="lazy"><div class="cb"><div class="cats"><span>DEVELOPMENT</span><span>SOFTWARE</span></div><h3>Sistema de Gestão de Estoque</h3><p>Desenvolvido em Java com CRUD completo (cadastro, consulta, atualização e exclusão), integração com banco de dados e foco em organização e controle de produtos.</p><div class="tt"><span>Java</span><span>CRUD</span><span>Banco de dados</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+    <article class="card rv"><img src="assets/projetos/agro_marketplace.jpg" alt="Gerenciamento de máquinas agrícolas" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>SOFTWARE</span></div><h3>Gerenciamento de Máquinas Agrícolas</h3><p>Sistema web para uma pequena concessionária de tratores, com arquitetura MVC e padrão DAO. Controla estoque, status de vendas e organização das máquinas.</p><div class="tt"><span>Web</span><span>MVC</span><span>DAO</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+    <article class="card rv"><img src="assets/projetos/agrishow_apresentacao.jpg" alt="Projeto Agrishow 2026" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>DATA</span></div><h3>Projeto Agrishow 2026</h3><p>Apresentação com análises e insights da Agrishow 2026, explorando tendências, tecnologia e uso de dados no agronegócio.</p><div class="tt"><span>Dados</span><span>Tendências</span><span>Agronegócio</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Agrishow-/blob/main/Agrishow%202026/Projeto%20Agrishow%202026.pdf" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+  </div>
+</section>
 
-<p>Contato: matheusccarvalhoads@gmail.com</p>
+<section id="skills" class="sec">
+  <p class="kicker">// 04 · TECH STACK</p>
+  <h2>Ferramentas que <em>utilizo</em></h2>
+  <div class="stack">
+    <div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/python.png" alt="" loading="lazy"><h3>Python</h3><p>Análise de dados e automação.</p></div>
+    <div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/java.png" alt="" loading="lazy"><h3>Java</h3><p>Sistemas com MVC, DAO e CRUD.</p></div>
+    <div class="tech rv"><span class="cat">DATA</span><img src="assets/skills/pandas.png" alt="" loading="lazy"><h3>Pandas</h3><p>Manipulação e análise de dados.</p></div>
+    <div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/powerbi.png" alt="" loading="lazy"><h3>Power BI</h3><p>Dashboards e indicadores.</p></div>
+    <div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/excel.png" alt="" loading="lazy"><h3>Excel</h3><p>Planilhas e análise de dados.</p></div>
+    <div class="tech rv"><span class="cat">DATABASE</span><img src="assets/skills/mysql.png" alt="" loading="lazy"><h3>MySQL</h3><p>Bancos de dados relacionais.</p></div>
+    <div class="tech rv"><span class="cat">AI</span><img src="assets/skills/ibm.png" alt="" loading="lazy"><h3>IBM / IA</h3><p>Fundamentos de inteligência artificial.</p></div>
+  </div>
+</section>
 
-<p>
-GitHub: 
-<a href="https://github.com/matheusvccarvalho" target="_blank">
-github.com/matheusvccarvalho
-</a>
-</p>
+<section id="certificados" class="sec">
+  <p class="kicker">// 05 · CERTIFICADOS</p>
+  <h2>Evolução em <em>constante movimento</em></h2>
+  <div class="filters" role="group" aria-label="Filtrar certificados">
+    <button class="on" data-f="all">Todos</button><button data-f="data">Data</button><button data-f="ia">IA</button><button data-f="dev">Desenvolvimento</button><button data-f="auto">Automação</button><button data-f="office">Office</button><button data-f="evento">Eventos</button>
+  </div>
+  <ul class="certs" id="certs">
+    <li data-c="dev"><a href="assets/certificados/python.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Python</a></li>
+    <li data-c="data"><a href="assets/certificados/powerbi.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Power BI</a></li>
+    <li data-c="auto"><a href="assets/certificados/automacao.pdf" target="_blank" rel="noopener noreferrer"><small>AUTOMAÇÃO</small>Automação</a></li>
+    <li data-c="ia"><a href="assets/certificados/googleia.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Google AI Foundations</a></li>
+    <li data-c="office"><a href="assets/certificados/pacoteoffice.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Pacote Office</a></li>
+    <li data-c="evento dev"><a href="assets/certificados/summit2024.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2024 – Desenvolvimento e Apresentação de Software</a></li>
+    <li data-c="evento dev"><a href="assets/certificados/summit2025.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2025 – Desenvolvimento e Apresentação de Software</a></li>
+    <li data-c="data office"><a href="assets/certificados/ExcelAnalysis.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Excel Fundamentals for Data Analysis</a></li>
+    <li data-c="office"><a href="assets/certificados/ExcelBasico.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Excel Básico</a></li>
+    <li data-c="evento data"><a href="assets/certificados/VisionAgro.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Vision Tech Summit Agro 2025</a></li>
+    <li data-c="ia"><a href="assets/certificados/ibm.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Introduction to Artificial Intelligence (AI) – IBM</a></li>
+    <li data-c="ia"><a href="assets/certificados/iagoogle.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>AI Fundamentals – Google</a></li>
+    <li data-c="dev"><a href="assets/certificados/totvs.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Programa START 2026 – Jornada DEV Negócios – TOTVS Paulista</a></li>
+  </ul>
+</section>
 
-<p>© 2026 Matheus Carvalho</p>
+<section id="busco" class="sec">
+  <p class="kicker">// 06 · DIREÇÃO</p>
+  <h2>Construindo minha <em>próxima etapa</em></h2>
+  <div class="dir"><span>Desenvolvimento</span><span>Dados</span><span>IA</span><span>Automação</span><span>AgroTech</span></div>
+  <p class="center muted">Estou em constante evolução: transformando problemas em soluções e aprendendo a cada projeto.</p>
+</section>
 
+<section id="contato" class="sec contact">
+  <p class="kicker">// 07 · CONTATO</p>
+  <h2>Vamos transformar dados em <em>possibilidades?</em></h2>
+  <div class="links">
+    <a class="btn primary" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a class="btn" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a class="btn" href="mailto:matheusccarvalhoads@gmail.com">matheusccarvalhoads@gmail.com</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div><b>Matheus Vinicius Carvalho</b><span>Software Engineer | Data | AI | AgroTech</span></div>
+  <div class="fl"><a href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:matheusccarvalhoads@gmail.com">Email</a></div>
+  <small>© 2026</small>
 </footer>
 
+<dialog id="why" aria-labelledby="whyT"><h3 id="whyT">Por que AgroTech?</h3><p>Porque tecnologia faz sentido quando resolve problemas reais. Não escolhi entre tecnologia e agro: quero usar uma para transformar o outro.</p><button class="btn sm" id="whyClose">Fechar</button></dialog>
 <script src="script.js"></script>
-
 </body>
 </html>

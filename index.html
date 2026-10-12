@@ -3,219 +3,669 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matheus Vinicius Carvalho — Software Engineer | Dados | IA | AgroTech</title>
+<title>Matheus Vinicius Carvalho — Software Engineer | Data | AI | Java</title>
 <meta name="description" content="Portfólio de Matheus Vinicius Carvalho: desenvolvimento, dados, IA, automação e AgroTech.">
-<meta name="theme-color" content="#0a0c0b">
+<meta name="theme-color" content="#050505">
+<meta name="author" content="Matheus Vinicius Carvalho">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Matheus Vinicius Carvalho — Software Engineer | Data | AI | Java">
+<meta property="og:description" content="Portfólio de Matheus Vinicius Carvalho: desenvolvimento, dados, IA, automação e AgroTech.">
+<meta name="twitter:card" content="summary">
+<noscript><style>.rv{opacity:1!important;translate:none!important;scale:none!important}.heat i{opacity:1!important;transform:none!important}.moment.rv:not(.in) img{opacity:1!important;transform:none!important}</style></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
 <canvas id="bg" aria-hidden="true"></canvas>
-<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
-
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
 <header class="nav" id="nav">
-  <a class="logo" href="#inicio" aria-label="Início"><span>MV</span>C</a>
-  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
-  <nav id="menu" aria-label="Principal">
-    <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#jornada">Jornada</a><a href="#projetos">Projetos</a><a href="#skills">Skills</a><a href="#certificados">Certificados</a><a href="#contato">Contato</a>
-  </nav>
+<a class="logo" href="#inicio" aria-label="Início"><span>MV</span>C</a>
+<button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+<nav id="menu" aria-label="Principal">
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#jornada">Jornada</a>
+<a href="#projetos">Projetos</a>
+<a href="#skills">Skills</a>
+<a href="#certificados">Certificados</a>
+<a href="#contato">Contato</a>
+</nav>
 </header>
-
 <main id="main">
+<!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-copy">
-    <p class="eyebrow"><span class="pulse"></span>Construindo enquanto aprendo</p>
-    <h1>Matheus Vinicius <em>Carvalho</em></h1>
-    <p class="role">Software Engineer</p>
-    <p class="tags">Dados • Desenvolvimento • IA • Java</p>
-    <blockquote class="quote">“Acredito que dados contam histórias.”</blockquote>
-    <p class="lead">Estudante de Engenharia de Software. Gosto de transformar dados em decisão e problemas em código, e levo isso para onde faz diferença, inclusive o agronegócio.</p>
-    <div class="cta"><a class="btn primary" href="#projetos">Ver projetos <span>→</span></a><a class="btn" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-  </div>
-  <div class="hero-visual">
-    <figure class="photo hud">
-      <img src="assets/profile/matheus2.jpg" alt="Foto de Matheus Vinicius Carvalho">
-      <figcaption>Engenharia de Software · UMC</figcaption>
-    </figure>
-    <div class="scene hud" aria-label="Cenário: campo, sensor, dados, dashboard e decisão">
-      <button class="why-btn" id="whyBtn" aria-label="Por que AgroTech?">?</button>
-      <svg viewBox="0 0 560 230" role="img" aria-label="Personagem caminhando entre o campo e o dashboard de dados">
-        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2ee59d"/><stop offset="1" stop-color="#b6f34a"/></linearGradient></defs>
-        <g stroke="#2ee59d" stroke-opacity=".35" fill="none"><path d="M0 170H560"/><path d="M0 190H560" stroke-opacity=".18"/></g>
-        <g class="crops" stroke="#2ee59d" stroke-width="2" stroke-linecap="round"><path d="M18 168v-14M34 168v-18M50 168v-14M66 168v-18M82 168v-14M98 168v-18M114 168v-14"/></g>
-        <g class="sensor"><path d="M150 168v-46" stroke="#e9efe9" stroke-width="3"/><circle cx="150" cy="116" r="7" fill="#b6f34a"/><circle class="ring" cx="150" cy="116" r="7" fill="none" stroke="#b6f34a"/></g>
-        <path class="flow" d="M150 116C230 60 290 60 360 100S430 100 440 90" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="4 7"/>
-        <g class="tractor"><rect x="20" y="140" width="34" height="14" rx="3" fill="#1b221e" stroke="#2ee59d"/><circle cx="26" cy="158" r="7" fill="#0a0c0b" stroke="#e9efe9"/><circle cx="50" cy="160" r="4.5" fill="#0a0c0b" stroke="#e9efe9"/></g>
-        <g transform="translate(360 60)"><rect width="150" height="108" rx="8" fill="#101512" stroke="#2ee59d" stroke-opacity=".6"/><g fill="url(#g)"><rect class="bar" x="16" y="62" width="14" height="30"/><rect class="bar b2" x="40" y="44" width="14" height="48"/><rect class="bar b3" x="64" y="52" width="14" height="40"/><rect class="bar b4" x="88" y="28" width="14" height="64"/></g><path d="M16 24h70" stroke="#e9efe9" stroke-opacity=".5"/><circle cx="124" cy="30" r="10" fill="none" stroke="#b6f34a" stroke-width="3" stroke-dasharray="40 24"/></g>
-        <g class="avatar"><circle cx="0" cy="138" r="8" fill="#e9efe9"/><path d="M-9 148h18v18h-18z" fill="#2ee59d"/><path class="leg l1" d="M-4 166v10"/><path class="leg l2" d="M4 166v10"/></g>
-        <g font-family="JetBrains Mono,monospace" font-size="10" fill="#8a968f"><text x="14" y="214">CAMPO</text><text x="128" y="214">SENSOR</text><text x="248" y="214">DADOS</text><text x="372" y="214">DASHBOARD</text><text x="478" y="214">DECISÃO</text></g>
-      </svg>
-    </div>
-  </div>
-</section>
+<div class="hero-content">
+<p class="eyebrow"><span class="pulse"></span>Construindo enquanto aprendo</p>
+<h1 class="hero-title">Matheus Vinicius<br><em>Carvalho</em></h1>
+<p class="hero-subtitle">Software Engineer · Dados · IA · Java</p>
+<blockquote class="quote">"Acredito que dados contam histórias. Transformo problemas complexos em código que gera decisão."</blockquote>
+<div class="cta">
+<a class="btn primary" href="#projetos">Ver projetos <span>→</span></a>
+<a class="btn outline" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="btn outline" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div>
+</div>
+<div class="hero-visual">
+<figure class="photo-frame">
+<img src="assets/profile/matheus2.jpg" alt="Foto de Matheus Vinicius Carvalho">
+<figcaption>Engenharia de Software · UMC</figcaption>
+</figure>
 
-<section class="stats" aria-label="Indicadores">
-  <div class="stat"><b data-count="13">0</b><span>Certificados</span></div>
-  <div class="stat"><b data-count="6">0</b><span>Projetos</span></div>
-  <div class="stat"><b data-count="4">0</b><span>Momentos marcantes</span></div>
-  <div class="stat chips"><span>Python</span><span>Java</span><span>Power BI</span><span>MySQL</span></div>
-</section>
+<div class="scene-container">
+<button class="why-btn" id="whyBtn" type="button" aria-label="Por que AgroTech?" aria-haspopup="dialog">?</button>
+<div class="scene" role="img" aria-label="Ilustração: um jovem programador, sentado à beira de uma lavoura de milho ao entardecer, trabalha em um notebook enquanto uma colheitadeira avança no campo ao fundo.">
+<svg class="scene-art" viewBox="0 0 480 300" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="agSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#061110"/><stop offset=".3" stop-color="#0d2c27"/><stop offset=".56" stop-color="#3d4a2a"/><stop offset=".8" stop-color="#c0822f"/><stop offset="1" stop-color="#f6b44a"/></linearGradient>
+<radialGradient id="agSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".9"/><stop offset=".35" stop-color="#f0a850" stop-opacity=".3"/><stop offset="1" stop-color="#f0a850" stop-opacity="0"/></radialGradient>
+<radialGradient id="agRay" gradientUnits="userSpaceOnUse" cx="392" cy="98" r="230"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".32"/><stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/></radialGradient>
+<linearGradient id="agCl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d4a3f" stop-opacity=".92"/><stop offset=".5" stop-color="#b9833a" stop-opacity=".95"/><stop offset="1" stop-color="#f7be62"/></linearGradient>
+<linearGradient id="agHillA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f4a3a"/><stop offset="1" stop-color="#18291f"/></linearGradient>
+<linearGradient id="agHillB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#243b2b"/><stop offset="1" stop-color="#122017"/></linearGradient>
+<linearGradient id="agField" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a38d3b"/><stop offset=".22" stop-color="#7f7b2f"/><stop offset=".6" stop-color="#4b5f26"/><stop offset="1" stop-color="#16251a"/></linearGradient>
+<linearGradient id="agHaze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0b060" stop-opacity=".38"/><stop offset="1" stop-color="#f0b060" stop-opacity="0"/></linearGradient>
+<linearGradient id="agWash" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ffc070" stop-opacity=".24"/><stop offset=".6" stop-color="#ffc070" stop-opacity=".07"/><stop offset="1" stop-color="#ffc070" stop-opacity="0"/></linearGradient>
+<linearGradient id="agBeam" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".16"/><stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/></linearGradient>
+<linearGradient id="agGround" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f301d"/><stop offset="1" stop-color="#090f0a"/></linearGradient>
+<linearGradient id="agStub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b09c5c" stop-opacity=".7"/><stop offset="1" stop-color="#8a7a46" stop-opacity=".55"/></linearGradient>
+<linearGradient id="agBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a9a62"/><stop offset="1" stop-color="#1b5535"/></linearGradient>
+<linearGradient id="agShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
+<linearGradient id="agTank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f8050"/><stop offset="1" stop-color="#1a4d31"/></linearGradient>
+<linearGradient id="agGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22362e"/><stop offset="1" stop-color="#0a1410"/></linearGradient>
+<linearGradient id="agHood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#24312b"/><stop offset="1" stop-color="#3a4d43"/></linearGradient>
+<radialGradient id="agGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#10b981" stop-opacity=".55"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+<linearGradient id="agCone" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#10b981" stop-opacity=".24"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></linearGradient>
+<linearGradient id="agWood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5a3a"/><stop offset="1" stop-color="#3a2a1c"/></linearGradient>
+<linearGradient id="agScreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1812"/><stop offset="1" stop-color="#0d2018"/></linearGradient>
+<linearGradient id="agChair" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#303a35"/><stop offset="1" stop-color="#1a211d"/></linearGradient>
+<linearGradient id="agLamp" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".3"/><stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/></linearGradient>
+<linearGradient id="agCloud" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#050a07" stop-opacity="0"/><stop offset=".5" stop-color="#050a07" stop-opacity=".24"/><stop offset="1" stop-color="#050a07" stop-opacity="0"/></linearGradient>
+<linearGradient id="agFaceG" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#6ee7b7" stop-opacity=".95"/><stop offset="1" stop-color="#6ee7b7" stop-opacity="0"/></linearGradient>
+<clipPath id="agClip"><rect width="40" height="30" rx="1.2"/></clipPath>
+<clipPath id="agCodeClip"><rect x="4" y="3.4" width="36" height="24.2"/></clipPath>
+<clipPath id="agStubClip"><rect id="agStubRect" x="322" y="168" width="158" height="20"/></clipPath>
+</defs>
 
-<section id="codigo" class="sec">
-  <p class="kicker">// MEU CÓDIGO</p>
-  <h2>Código que eu <em>publico</em></h2>
-  <div class="gh rv" id="gh">
-    <div class="gh-bar"><span class="dots"><i></i><i></i><i></i></span><a href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">github.com/matheusvccarvalho</a></div>
-    <div class="gh-body">
-      <div class="gh-side">
-        <img id="ghAv" alt="" width="72" height="72" hidden>
-        <h3 id="ghName">matheusvccarvalho</h3>
-        <p class="note">Software Engineer</p>
-        <div class="langs" id="ghLangs"><span>Python</span><span>Java</span><span>Power BI</span></div>
-        <p class="note" id="ghStat"></p>
-        <a class="btn primary sm" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">Ver GitHub <span>→</span></a>
-      </div>
-      <div class="gh-main">
-        <h4>Repositórios</h4>
-        <ul class="repos" id="ghRepos">
-          <li><a href="https://github.com/matheusvccarvalho/Conversor_Arquivos" target="_blank" rel="noopener noreferrer">Conversor_Arquivos</a></li>
-          <li><a href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos" target="_blank" rel="noopener noreferrer">Calculadora_Orcamentos</a></li>
-          <li><a href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Projeto_Shibata</a></li>
-          <li><a href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Projeto_Gerenciamento_Maquinas</a></li>
-          <li><a href="https://github.com/matheusvccarvalho/Agrishow-" target="_blank" rel="noopener noreferrer">Agrishow-</a></li>
-        </ul>
-        <div id="ghAct" hidden><h4>Atividade pública recente</h4><div class="heat" id="ghHeat" role="img" aria-label="Mapa de atividade pública recente no GitHub"></div><p class="note" id="ghNote"></p></div>
-      </div>
-    </div>
-  </div>
-</section>
+<rect width="480" height="104" fill="url(#agSky)"/>
+<circle class="ag-sun" cx="392" cy="98" r="112" fill="url(#agSun)"/>
+<g class="ag-rays" fill="url(#agRay)">
+<path d="M392,98 L150,0 L196,0Z"/><path d="M392,98 L262,0 L296,0Z"/><path d="M392,98 L336,0 L356,0Z"/><path d="M392,98 L424,0 L462,0Z"/>
+</g>
+<circle cx="392" cy="97" r="17" fill="#ffd9a0" opacity=".26"/>
+<circle cx="392" cy="97" r="9.5" fill="#fff0c8"/>
+<g fill="none" stroke="#ffc88c" stroke-linecap="round" opacity=".14">
+<path class="ag-streak a" d="M30,44 C90,36 150,42 214,35" stroke-width="3"/>
+<path class="ag-streak b" d="M250,58 C310,50 360,56 430,47" stroke-width="2.2"/>
+<path class="ag-streak c" d="M60,70 C110,66 150,69 196,64" stroke-width="1.6"/>
+</g>
+<g class="ag-cl" style="--d:90s">
+<path d="M176,62 C174,55 181,51 188,53 C190,45 201,42 208,47 C213,40 226,41 228,50 C236,48 244,53 242,61 C225,65 196,65 176,62Z" fill="url(#agCl)"/>
+<path d="M166,68 C190,65 238,66 262,62" fill="none" stroke="#f0b060" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+</g>
+<g class="ag-cl" style="--d:120s">
+<path d="M282,78 C281,73 286,70 292,71 C294,65 302,64 307,68 C311,64 320,66 320,73 C326,73 330,77 328,81 C314,83 298,82 282,78Z" fill="url(#agCl)"/>
+</g>
+<g class="ag-cl" style="--d:70s">
+<path d="M356,54 C376,48 416,50 446,46 C440,52 418,56 392,57 C380,58 362,58 356,54Z" fill="url(#agCl)" opacity=".85"/>
+<path d="M330,44 C350,40 372,42 390,38" fill="none" stroke="#f0b060" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+</g>
 
+<g class="ag-mtn">
+<path d="M0,88 C30,70 52,66 84,78 C110,88 130,64 164,60 C200,56 214,76 250,80 C286,84 300,70 330,76 C360,82 380,96 400,96 C430,96 456,82 480,80 L480,110 L0,110Z" fill="#a27f3a" fill-opacity=".4"/>
+<path d="M0,88 C30,70 52,66 84,78 C110,88 130,64 164,60 C200,56 214,76 250,80 C286,84 300,70 330,76" fill="none" stroke="#ffd9a0" stroke-opacity=".28" stroke-width=".8"/>
+<path d="M0,92 C40,80 70,84 104,78 C140,72 170,86 204,82 C240,78 270,70 310,76 C350,84 380,97 410,97 C440,97 466,90 480,90 L480,110 L0,110Z" fill="#2f4a36" fill-opacity=".9"/>
+<path d="M0,92 C40,80 70,84 104,78 C140,72 170,86 204,82 C240,78 270,70 310,76" fill="none" stroke="#ffc88c" stroke-opacity=".18" stroke-width=".7"/>
+</g>
+<path d="M0,96 C30,86 70,74 118,72 C150,71 176,80 210,86 C250,92 300,92 340,94 C380,95 410,97 480,88 L480,110 L0,110Z" fill="url(#agHillA)"/>
+<path d="M0,96 C30,86 70,74 118,72 C150,71 176,80 210,86 C250,92 300,92 340,94 C380,95 410,97 480,88" fill="none" stroke="#ffc88c" stroke-opacity=".16" stroke-width=".8"/>
+<g class="ag-silos">
+<g fill="#121c16">
+<rect x="420" y="58" width="13" height="42"/><path d="M420,58a6.5,6.5 0 0 1 13,0z"/>
+<rect x="436" y="68" width="15" height="32"/><path d="M436,68a7.5,7.5 0 0 1 15,0z"/>
+<rect x="455" y="80" width="16" height="20"/><path d="M454,80 L463,70 L472,80z"/>
+<rect x="469" y="88" width="11" height="12"/><path d="M468,88 L474.5,83 L481,88z"/>
+<path d="M463,70 V65" stroke="#121c16" stroke-width="1"/>
+</g>
+<path d="M433,63 L440,62 L440,68 M451,73 L458,73 L458,80" fill="none" stroke="#121c16" stroke-width="1.2"/>
+<path d="M420,66 V100 M436,74 V100 M455,82 V100 M469,90 V100" fill="none" stroke="#ffc88c" stroke-opacity=".38" stroke-width=".8"/>
+<path d="M420,70 H433 M420,78 H433 M420,86 H433 M420,94 H433 M436,76 H451 M436,84 H451 M436,92 H451 M455,88 H471 M455,95 H471" fill="none" stroke="#000" stroke-opacity=".28" stroke-width=".6"/>
+<path d="M463,70 L472,80 M474.5,83 L481,88" fill="none" stroke="#ffc88c" stroke-opacity=".25" stroke-width=".6"/>
+<rect x="425.5" y="61" width="2" height="2.6" fill="#ffd9a0" opacity=".55"/>
+<rect x="441" y="72" width="2" height="2.6" fill="#ffd9a0" opacity=".45"/>
+<rect x="472" y="91" width="2.4" height="3" fill="#ffd9a0" opacity=".5"/>
+</g>
+<path d="M0,102 C60,92 110,96 170,92 C230,88 270,96 330,96 C380,96 430,100 480,94 L480,110 L0,110Z" fill="url(#agHillB)"/>
+<g id="agTrees"></g>
+
+<rect y="100" width="480" height="200" fill="url(#agField)"/>
+<g id="agRows"></g>
+<rect y="100" width="480" height="44" fill="url(#agHaze)"/>
+<g id="agTrees2"></g>
+<path d="M330,100 L470,100 L360,250 L170,250Z" fill="url(#agBeam)" class="ag-beam"/>
+<path id="agStubble" d="M300,170 L480,170 L480,185 L300,185Z" fill="url(#agStub)" class="ag-fadeable"/>
+<g id="agStubLines" class="ag-fadeable" clip-path="url(#agStubClip)">
+<rect x="150" y="177.1" width="340" height="2.8" fill="#2a2414" opacity=".34"/>
+<g fill="none" stroke="#5e5230" stroke-width=".6" stroke-linecap="round" stroke-dasharray="7 3 2 5" opacity=".6">
+<path d="M200,172 H480"/><path d="M196,174.6 H480"/><path d="M204,182 H480"/><path d="M198,183.4 H480"/><path d="M202,184.6 H480"/>
+</g>
+</g>
+<g id="agLaneCrops" class="ag-fadeable"></g>
+<g class="ag-motes" fill="#ffe3b0">
+<circle class="ag-mote" cx="330" cy="132" r=".8" style="--d:7s;--w:-1s"/>
+<circle class="ag-mote" cx="372" cy="146" r=".6" style="--d:9s;--w:-4s"/>
+<circle class="ag-mote" cx="404" cy="128" r=".9" style="--d:8s;--w:-2.5s"/>
+<circle class="ag-mote" cx="436" cy="152" r=".6" style="--d:10s;--w:-6s"/>
+<circle class="ag-mote" cx="290" cy="150" r=".7" style="--d:11s;--w:-3s"/>
+<circle class="ag-mote" cx="452" cy="136" r=".7" style="--d:8.5s;--w:-5s"/>
+</g>
+
+<g id="agHarv" class="ag-fadeable" transform="translate(318 178) scale(.6)">
+<g id="agBob">
+<ellipse cx="78" cy="1" rx="90" ry="4" fill="#000" opacity=".38"/>
+<ellipse cx="76" cy=".6" rx="17" ry="2" fill="#000" opacity=".5"/>
+<ellipse cx="136" cy=".6" rx="10" ry="1.6" fill="#000" opacity=".5"/>
+<path d="M52,-72 L-72,-50 L-72,-6 L52,-62Z" fill="url(#agLamp)"/>
+<g class="ag-vib">
+<rect x="131.4" y="-57" width="3.4" height="9.4" rx=".8" fill="#1a2a22"/>
+<rect x="130.8" y="-58.2" width="4.6" height="1.8" rx=".6" fill="#2c3a33"/>
+<g id="agSmoke"></g>
+<path d="M100,-66 L132,-78 L172,-78" fill="none" stroke="#2f7a4d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100,-68 L132,-80 L172,-80" fill="none" stroke="#9be8b8" stroke-width=".7" opacity=".35" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M172,-78 L177,-71" fill="none" stroke="#1a4d31" stroke-width="4" stroke-linecap="round"/>
+<path d="M96,-48 L101,-67 L147,-67 L151,-48Z" fill="url(#agTank)"/>
+<path d="M101,-66 H147" stroke="#9be8b8" stroke-width=".8" opacity=".3" fill="none"/>
+<rect x="108" y="-64" width="12" height="14" rx="2" fill="#0a1410"/>
+<rect id="agGrain" x="108.6" y="-63.4" width="10.8" height="12.8" rx="1.4" fill="#d7bf45" style="transform:scaleY(.4)"/>
+<path d="M56,-48 L142,-48 C147,-48 152,-44 152,-38 L152,-17 C152,-15 150,-14 148,-14 L56,-14Z" fill="url(#agBody)"/>
+<path d="M56,-48 L142,-48 C147,-48 152,-44 152,-38 L152,-17 C152,-15 150,-14 148,-14 L56,-14Z" fill="url(#agShade)"/>
+<path d="M58,-32 H151" stroke="#84cc16" stroke-width="2.2" fill="none"/>
+<path d="M58,-29.6 H151" stroke="#e5b82a" stroke-width=".7" fill="none" opacity=".8"/>
+<path d="M60,-46.4 H140" stroke="#9be8b8" stroke-width=".8" opacity=".3" fill="none"/>
+<path d="M112,-44 H138 M112,-40 H138 M112,-36 H138" stroke="#14382a" stroke-width="1.4" opacity=".8" fill="none"/>
+<path d="M62,-26 H100 M62,-20 H100" stroke="#14382a" stroke-width=".7" opacity=".5" fill="none"/>
+<path d="M53,-44 L50,-16 M58,-44 L56,-16" stroke="#173d2a" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+<path d="M52.4,-38 H57.6 M51.8,-31 H57 M51.2,-24 H56.4" stroke="#9be8b8" stroke-width=".6" opacity=".5" fill="none"/>
+<path d="M36,-26 L60,-48 L68,-42 L48,-14 L40,-14Z" fill="#1f5a39"/>
+<path d="M40,-24 L58,-44" stroke="#14382a" stroke-width=".6" opacity=".7" fill="none"/>
+<g id="agHdr">
+<path d="M2,-24 C2,-26 4,-27 6,-27 L44,-27 L48,-6 C48,-3 46,-2 44,-2 L6,-2 C4,-2 2,-3 2,-5Z" fill="#24673f"/>
+<path d="M2,-24 C2,-26 4,-27 6,-27 L44,-27 L48,-6 C48,-3 46,-2 44,-2 L6,-2 C4,-2 2,-3 2,-5Z" fill="url(#agShade)"/>
+<path d="M4,-8 H46" stroke="#84cc16" stroke-width="1.6" opacity=".9" fill="none"/>
+<path d="M10,-22 V-10 M18,-22 V-10 M26,-22 V-10 M34,-22 V-10 M42,-22 V-10" stroke="#14382a" stroke-width=".7" opacity=".6" fill="none"/>
+<path d="M3.5,-5.5 L-7,-3.5 L3.5,-14Z" fill="#2f7a4d"/>
+<path d="M3.5,-5.5 L-7,-3.5 L0,-9.5" fill="none" stroke="#9be8b8" stroke-width=".5" opacity=".4"/>
+<g id="agStraw" fill="#e0c460"></g>
+<path d="M4,-1.2 L6,-4 L8,-1.2 L10,-4 L12,-1.2 L14,-4 L16,-1.2 L18,-4 L20,-1.2 L22,-4 L24,-1.2 L26,-4 L28,-1.2 L30,-4 L32,-1.2 L34,-4 L36,-1.2 L38,-4 L40,-1.2 L42,-4 L44,-1.2" class="ag-sickle" fill="none" stroke="#c4d0c8" stroke-width=".9" stroke-linejoin="round"/>
+<g transform="translate(20 -36)">
+<g id="agReel">
+<circle r="12" fill="none" stroke="#d7bf45" stroke-width="1.2"/>
+<path d="M-12,0 H12 M0,-12 V12 M-8.5,-8.5 L8.5,8.5 M-8.5,8.5 L8.5,-8.5" stroke="#d7bf45" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+<path d="M12,-2.4 V2.4 M-12,-2.4 V2.4 M-2.4,12 H2.4 M-2.4,-12 H2.4 M10.2,6.8 L6.8,10.2 M-10.2,-6.8 L-6.8,-10.2 M6.8,-10.2 L10.2,-6.8 M-10.2,6.8 L-6.8,10.2" stroke="#e8d36a" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+<circle r="2" fill="#6b7a72"/>
+</g>
+</g>
+</g>
+<path d="M58,-48 L58,-70 C58,-74 60,-76 64,-76 L88,-76 C91,-76 92,-75 93,-72 L99,-48Z" fill="url(#agBody)"/>
+<path d="M62,-52 L62,-71 C62,-72 63,-72 64,-72 L87,-72 L93,-52Z" fill="url(#agGlass)"/>
+<path d="M77,-72 L77,-52" stroke="#173d2a" stroke-width=".9" opacity=".8" fill="none"/>
+<g class="ag-op"><circle cx="75" cy="-62.5" r="3.4" fill="#050b08"/><path d="M68.5,-52 C68.5,-58 70.5,-59.4 75,-59.4 C79.5,-59.4 81.5,-58 81.5,-52Z" fill="#050b08"/></g>
+<rect x="82" y="-58" width="4.5" height="3" rx=".6" fill="#10b981" class="ag-dash"/>
+<path d="M64,-70 L70,-70 L66,-54 L64,-54Z" fill="#fff" opacity=".07"/>
+<path class="ag-glint" d="M72,-71 L80,-71 L74,-53 L68,-53Z" fill="#ffe3b0" opacity="0"/>
+<path d="M54,-77 H95" stroke="#173d2a" stroke-width="3" stroke-linecap="round" fill="none"/>
+<path d="M56,-79 H94" stroke="#ffd9a0" stroke-width="1" opacity=".45" stroke-linecap="round" fill="none"/>
+<circle cx="56" cy="-74" r="1.8" fill="#ffd9a0"/>
+<rect x="52.6" y="-62" width="3" height="2" rx=".6" fill="#ffe3b0" opacity=".9"/>
+<path d="M76,-77 V-86" stroke="#9aa8a0" stroke-width="1.4" fill="none"/>
+<circle class="ag-beacon" cx="76" cy="-87" r="2.4" fill="#84cc16"/>
+<path d="M151,-46 L151,-20 M146,-67 L150,-50" stroke="#ffd9a0" stroke-width="1" opacity=".3" fill="none"/>
+</g>
+<g transform="translate(76 -15)">
+<circle r="15" fill="#151c18"/>
+<g id="agWhA">
+<circle r="13.6" fill="none" stroke="#050706" stroke-width="2.6" stroke-dasharray="4 3.12"/>
+<circle r="9.5" fill="#d9a928"/>
+<path d="M0,-9.5 V-5 M0,9.5 V5 M-9.5,0 H-5 M9.5,0 H5 M-6.7,-6.7 L-3.5,-3.5 M6.7,6.7 L3.5,3.5 M-6.7,6.7 L-3.5,3.5 M6.7,-6.7 L3.5,-3.5" stroke="#9a7414" stroke-width="2" fill="none"/>
+<circle r="5" fill="#e8c23a"/>
+<circle r="2.6" fill="#6b7a72"/>
+<circle cx="0" cy="-3.6" r=".9" fill="#8a6a14"/><circle cx="3.1" cy="1.8" r=".9" fill="#8a6a14"/><circle cx="-3.1" cy="1.8" r=".9" fill="#8a6a14"/>
+</g>
+<circle r="15" fill="none" stroke="#2b3731" stroke-width=".6"/>
+<path d="M-11,-9 A14,14 0 0 1 4,-14.4" fill="none" stroke="#ffd9a0" stroke-width=".7" opacity=".3" stroke-linecap="round"/>
+</g>
+<g transform="translate(136 -9)">
+<circle r="9" fill="#151c18"/>
+<g id="agWhB">
+<circle r="8.2" fill="none" stroke="#050706" stroke-width="1.8" stroke-dasharray="3.2 3.2"/>
+<circle r="5.5" fill="#d9a928"/>
+<path d="M0,-5.5 V0 M-4.7,2.7 L0,0 M4.7,2.7 L0,0" stroke="#9a7414" stroke-width="1.2" fill="none"/>
+<circle r="3" fill="#6b7a72"/>
+</g>
+</g>
+<g id="agFx"></g>
+</g>
+</g>
+
+<g id="agFrontCrops"></g>
+<rect y="150" width="480" height="104" fill="url(#agWash)" pointer-events="none"/>
+<rect class="ag-cloud" x="-140" y="100" width="260" height="150" fill="url(#agCloud)"/>
+<path d="M0,252 C70,243 150,247 230,253 C320,259 400,256 480,248 L480,300 L0,300Z" fill="url(#agGround)"/>
+<path d="M0,252 C70,243 150,247 230,253 C320,259 400,256 480,248" fill="none" stroke="#ffc88c" stroke-opacity=".14" stroke-width=".8"/>
+
+<g class="ag-dev" transform="translate(18 52) scale(.74)">
+<ellipse cx="130" cy="267" rx="98" ry="5" fill="#000" opacity=".42"/>
+<ellipse id="agGlowGround" cx="160" cy="266" rx="50" ry="5" fill="url(#agGlow)" opacity=".35"/>
+<path d="M34,268 C31,252 36,240 49,240 C62,240 68,252 66,268Z" fill="#232d27"/>
+<path d="M39,260 H62 V268 H39Z" fill="#1b231e"/>
+<path d="M43,250 C47,246 58,246 62,250" stroke="#34443b" stroke-width="1" fill="none" opacity=".7"/>
+<path d="M47,258 H56" stroke="#4a5a50" stroke-width=".8" opacity=".7" fill="none"/>
+<g transform="translate(45 246.5)"><path d="M0,6 C0,2.5 3,0 8,0 C8,4 5,7 0,6Z" fill="#10b981" opacity=".85"/><path d="M.8,5.4 L6,1.2" stroke="#06150e" stroke-width=".5" fill="none"/></g>
+<path d="M64,244 C68,251 68,259 66,267" stroke="#ffd9a0" stroke-width="1" opacity=".28" fill="none" stroke-linecap="round"/>
+<path d="M64,238 L59,197 C58,194 61,192 64,193 L71,195 L73,236Z" fill="url(#agChair)"/>
+<path d="M61.5,199 L66,236" stroke="#52665a" stroke-width=".6" opacity=".6" fill="none"/>
+<path d="M62,203 L69,204 M62.6,210 L69.6,211 M63.2,217 L70.2,218 M63.8,224 L70.8,225" stroke="#0f1512" stroke-width=".6" opacity=".6" fill="none"/>
+<path d="M76,239 L70,267 M108,239 L114,267" stroke="#222825" stroke-width="3" stroke-linecap="round" fill="none"/>
+<path d="M70,233 H116 L114,239 H72Z" fill="url(#agChair)"/>
+<path d="M70,233.4 H116" stroke="#4a5a50" stroke-width=".7" opacity=".6" fill="none"/>
+<ellipse cx="172" cy="268" rx="52" ry="3" fill="#000" opacity=".3"/>
+<path d="M130,218 L127,267" stroke="#2a2018" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+<path d="M212,218 L215,267" stroke="#35281d" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+<path d="M128.6,246 L213.6,244" stroke="#2a2018" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+<path d="M112,213 H220 V218.4 H112Z" fill="url(#agWood)"/>
+<path d="M112,213.4 H220" stroke="#9a7a55" stroke-width=".7" opacity=".6" fill="none"/>
+<path d="M112,217.8 H220" stroke="#000" stroke-width=".8" opacity=".35" fill="none"/>
+<path d="M150,214.8 H210 M160,216.4 H196 M126,215.4 H146" stroke="#c8a070" stroke-width=".5" opacity=".18" fill="none"/>
+<path d="M113,213 L132,211.2 L135.5,212.6 L116,214.8Z" fill="#1d4d34"/>
+<path d="M115,212.4 L133,210.6 L136.5,212 L118,213.8Z" fill="#e9e6da"/>
+<path d="M119,212.5 L131,211.3 M120,213.2 L133.4,211.9" stroke="#9a968a" stroke-width=".4" fill="none"/>
+<path d="M124,210 L134,208.3" stroke="#10b981" stroke-width="1" stroke-linecap="round" fill="none"/>
+<path id="agConeLight" d="M152,178 L116,158 L116,212 L152,205Z" fill="url(#agCone)" opacity=".5"/>
+<ellipse id="agScrGlow" cx="164" cy="192" rx="36" ry="26" fill="url(#agGlow)" opacity=".5"/>
+<ellipse id="agDeskGlow" cx="160" cy="213.4" rx="34" ry="2.2" fill="#6ee7b7" opacity=".1"/>
+<path d="M128,209 L188,205.5 L190,209.5 L130,213Z" fill="#2f3833"/>
+<path d="M128,209 L188,205.5 L188.6,207 L128.8,210.4Z" fill="#46524b"/>
+<path d="M133,210 L186,207" stroke="#161c19" stroke-width="1.1" stroke-dasharray="1.6 1.1" opacity=".9" fill="none"/>
+<g id="agKeys"></g>
+<g transform="matrix(.7 -.075 0 .95 150 177)">
+<rect x="-2" y="-2" width="44" height="35" rx="2.5" fill="#1c2420" stroke="#34423a" stroke-width=".6"/>
+<rect width="40" height="30" rx="1.2" fill="url(#agScreen)"/>
+<g clip-path="url(#agClip)">
+<rect x="0" y="0" width="4" height="30" fill="#0a120e"/>
+<rect x=".9" y="5" width="2.2" height="2.2" rx=".5" fill="#1f3329"/><rect x=".9" y="9" width="2.2" height="2.2" rx=".5" fill="#1a2a21"/><rect x=".9" y="13" width="2.2" height="2.2" rx=".5" fill="#1a2a21"/>
+<g clip-path="url(#agCodeClip)"><g id="agCode"></g></g>
+<rect x="0" y="0" width="40" height="3.4" fill="#0f1b15"/>
+<rect x="1" y=".6" width="11" height="2.8" rx=".6" fill="#1a2a21"/>
+<rect x="2" y="1.7" width="6" height=".8" rx=".4" fill="#6b7a72"/>
+<circle id="agDot" cx="36.6" cy="1.7" r=".9" fill="#10b981"/>
+<circle id="agSpin" cx="36.6" cy="1.7" r="1.2" fill="none" stroke="#84cc16" stroke-width=".5" stroke-dasharray="3.2 4.4" opacity="0"/>
+<path id="agCheck" d="M35.7,1.8 L36.4,2.5 L37.6,1" fill="none" stroke="#84cc16" stroke-width=".6" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+<path id="agCross" d="M35.9,1 L37.3,2.4 M37.3,1 L35.9,2.4" fill="none" stroke="#ef6a5a" stroke-width=".6" stroke-linecap="round" opacity="0"/>
+<rect id="agStatus" x="0" y="28" width="40" height="2" fill="#0f3d2a"/>
+<rect x="1" y="28.6" width="5" height=".8" rx=".4" fill="#6b7a72" opacity=".6"/><rect x="33" y="28.6" width="5" height=".8" rx=".4" fill="#6b7a72" opacity=".6"/>
+<rect id="agRunBar" x="0" y="27.5" width="0" height=".6" fill="#84cc16" opacity=".9"/>
+<g class="ag-sticker" transform="translate(30.4 17.2)">
+<circle cx="4.2" cy="4.2" r="5" fill="#0b1812" fill-opacity=".78"/>
+<path d="M1.2,6.6 C1,3.6 3.2,1.6 7,1.6 C7.2,4.8 5,7.2 1.2,6.6Z" fill="#10b981"/>
+<path d="M1.8,6.1 L5.6,2.8" stroke="#06150e" stroke-width=".45" fill="none" stroke-linecap="round"/>
+</g>
+<rect id="agFlash" width="40" height="30" fill="#b6f5d3" opacity="0"/>
+<path d="M0,0 L40,0 L22,30 L0,30Z" fill="#fff" opacity=".035"/>
+</g>
+</g>
+<g transform="translate(194 213)">
+<path d="M0,0 L-.5,-8 L6.5,-8 L6,0Z" fill="#1c2420"/>
+<rect x="-.9" y="-9.4" width="8.4" height="1.6" rx=".6" fill="#2a332e"/>
+<path d="M2.2,-4.6 Q3.4,-6.2 4.6,-4.6 Q3.4,-3.2 2.2,-4.6Z" fill="#10b981"/>
+<path d="M6,-8 L5.6,-.4" stroke="#ffd9a0" stroke-width=".5" opacity=".35" fill="none"/>
+<g class="ag-steam">
+<path d="M2,-10 C1,-12 3,-13 2,-15" stroke="#cfe6da" stroke-width=".8" fill="none" stroke-linecap="round"/>
+<path d="M4.5,-10 C3.5,-12 5.5,-13 4.5,-15" stroke="#cfe6da" stroke-width=".8" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+<g transform="translate(203 213.2)">
+<path d="M0,0 V-3 H14 V0Z" fill="#1d4d34"/>
+<path d="M0,-3 H14" stroke="#9be8b8" stroke-width=".4" opacity=".4"/>
+<path d="M1,-3 V-5.8 H13 V-3Z" fill="#2f7a4d"/>
+<path d="M.5,-5.8 V-8.4 H12 V-5.8Z" fill="#14382a"/>
+<path d="M1.6,-1.5 H13.4 M2.4,-4.4 H12.4" stroke="#e9e6da" stroke-width=".4" opacity=".55" fill="none"/>
+<path d="M14,-8.4 L13.4,0" stroke="#ffd9a0" stroke-width=".5" opacity=".3" fill="none"/>
+</g>
+<path d="M94,229 L132,229 L137,259" fill="none" stroke="#141c28" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M130,257 C130,262 134,266 142,266 L155,266 C159,266 159,262 155,260 L145,256Z" fill="#aab1ae"/>
+<path d="M88,226 L126,226 L129,258" fill="none" stroke="#1b2736" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90,222 L124,222 L126,250" fill="none" stroke="#33465e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+<path d="M114,227 L119,232 M121,236 L125,238" stroke="#0d141d" stroke-width=".9" stroke-linecap="round" opacity=".6" fill="none"/>
+<g id="agFoot">
+<path d="M121,256 C121,262 125,266 133,266 L147,266 C151,266 151,261 147,259 L136,255Z" fill="#e6e9e7"/>
+<path d="M121.5,263.6 H149.5" stroke="#8a948f" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+<path d="M126,258 L136,257.4" stroke="#10b981" stroke-width=".8" stroke-linecap="round" opacity=".7" fill="none"/>
+</g>
+<g id="agTorso" transform="rotate(5 94 230)">
+<path id="agArmF" d="M104,180 L116,200 L136,203" fill="none" stroke="#1f2d26" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="agHandF" transform="translate(139 204.5)">
+<path d="M-2,-3.2 C2,-4 6.5,-3.4 8,-1.6 L8,1.8 C6,3 2,3.4 -2,3Z" fill="#8e5f40"/>
+<g stroke="#7f553a" stroke-width="1.5" stroke-linecap="round" fill="none">
+<path class="ag-f" d="M7,-1.4 L11.2,-1.4"/><path class="ag-f" d="M7,0 L11.6,0"/><path class="ag-f" d="M7,1.4 L11,1.4"/>
+</g>
+</g>
+<path d="M78,230 C75,210 78,188 86,174 C90,167 98,164 104,167 C110,170 112,180 112,194 C112,208 111,220 108,231Z" fill="url(#agHood)"/>
+<path d="M78,230 C75,210 78,188 86,174 C90,167 98,164 104,167 C110,170 112,180 112,194 C112,208 111,220 108,231Z" fill="url(#agShade)"/>
+<path d="M84,172 C86,164 94,161 100,164 C96,170 90,172 84,172Z" fill="#202b26"/>
+<path d="M82,194 C87,197 92,198 97,196 M80,208 C86,211 92,212 98,210 M92,222 C97,224 102,224 107,222" stroke="#0e1511" stroke-width="1.1" opacity=".55" fill="none" stroke-linecap="round"/>
+<path d="M88,186 C91,190 94,192 98,192" stroke="#4d6358" stroke-width=".7" opacity=".45" fill="none" stroke-linecap="round"/>
+<path d="M104,172 C109,181 110,196 109,214" stroke="#10b981" stroke-width=".9" opacity=".7" fill="none" stroke-linecap="round"/>
+<path d="M99,172 L101,189 M102,172 L104,186" stroke="#cbd5d0" stroke-width=".7" opacity=".7" fill="none" stroke-linecap="round"/>
+<path d="M112,180 C113,194 112,208 109,222" stroke="#ffd9a0" stroke-width="1.2" opacity=".35" fill="none" stroke-linecap="round"/>
+<path d="M95,214 C93,209 96,205 101,205 C101,210 99,214 95,214Z" fill="#10b981" opacity=".75"/>
+<path d="M97,162 L100,150 L108,152 L108,164Z" fill="#9c6644"/>
+<g id="agHead" transform="rotate(0 103 160)">
+<path d="M104.5,146 C99,128 112,124 121,133" fill="none" stroke="#1b2220" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M98,150 C97,141 101,134 109,133 C117,133 122,139 121,146 L123,152 C124,154 122,155 121,155.5 L120.6,160 C120,162.5 118.6,164.4 116.6,165.7 C114.4,167 112,167.2 110,166.8 C105,166 100,161 98,150Z" fill="#b67b56"/>
+<path id="agFaceGlow" d="M98,150 C97,141 101,134 109,133 C117,133 122,139 121,146 L123,152 C124,154 122,155 121,155.5 L120.6,160 C120,162.5 118.6,164.4 116.6,165.7 C114.4,167 112,167.2 110,166.8 C105,166 100,161 98,150Z" fill="url(#agFaceG)" opacity=".1"/>
+<path d="M121,142 C123,146 122,150 123,152" stroke="#ffd9a0" stroke-width="1.2" opacity=".55" fill="none" stroke-linecap="round"/>
+<path d="M97,151 C95,141 100,132 110,132 C118,132.5 122,136 121.5,140.3 C118.5,137.6 112.5,137.6 107.5,140.4 C103.5,142.4 101,148 100,153Z" fill="#14110f"/>
+<path d="M100,137 C104,133 110,132.5 116,134" stroke="#2a2420" stroke-width=".8" opacity=".9" fill="none" stroke-linecap="round"/>
+<path d="M104.5,146 C99,128 112,124 121,133" fill="none" stroke="#2c3732" stroke-width=".7" opacity=".9" stroke-linecap="round" transform="translate(0 -.5)"/>
+<path d="M104,150 C101,150 101,156 105,157Z" fill="#9c6644"/>
+<path d="M113.2,144.5 L119,143.7" stroke="#14110f" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+<ellipse cx="116.2" cy="147.6" rx="1.9" ry="1.05" fill="#d9c9b5" opacity=".85"/><ellipse class="ag-eye" cx="116.4" cy="147.6" rx="1.2" ry=".95" fill="#1a1210"/><path d="M114.2,147 C115.4,146.1 117.3,146.1 118.3,147.1" stroke="#14110f" stroke-width=".6" fill="none" stroke-linecap="round"/>
+<path d="M121,148 C122,150 122.6,152 122.4,153.4 M120,154.6 q.9,.6 1.8,0" stroke="#8f5a3c" stroke-width=".5" fill="none" stroke-linecap="round" opacity=".8"/><path d="M115.2,158.3 C116.6,157.7 118,157.8 119.3,158.4" stroke="#6e3f2c" stroke-width=".7" fill="none" stroke-linecap="round"/><path d="M115.6,158.7 C117,159.8 118.4,159.8 119,158.7 C118,158.5 116.6,158.5 115.6,158.7Z" fill="#a85f4a"/><path d="M104,162.5 C108,165.4 112.5,165.8 116.4,163.6" stroke="#7f4d30" stroke-width=".7" fill="none" opacity=".3" stroke-linecap="round"/>
+<ellipse cx="105.6" cy="151.6" rx="5.1" ry="6.3" fill="#171d1b"/>
+<ellipse cx="105.6" cy="151.6" rx="3.6" ry="4.8" fill="#222b27" stroke="#10b981" stroke-opacity=".55" stroke-width=".6"/>
+<circle class="ag-led" cx="104.6" cy="151.6" r=".9" fill="#10b981"/>
+</g>
+<path id="agArmN" d="M98,182 L108,206 L131,203" fill="none" stroke="#34463d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="agHandN" transform="translate(131 203)">
+<path d="M-2,-3.2 C2,-4 6.5,-3.4 8,-1.6 L8,1.8 C6,3 2,3.4 -2,3Z" fill="#b67b56"/>
+<g stroke="#a76f4b" stroke-width="1.5" stroke-linecap="round" fill="none">
+<path class="ag-f" d="M7,-1.4 L11.2,-1.4"/><path class="ag-f" d="M7,0 L11.6,0"/><path class="ag-f" d="M7,1.4 L11,1.4"/>
+</g>
+</g>
+</g>
+</g>
+<g id="agNearGrass"></g>
+
+<g class="ag-data">
+<path id="agLink" class="ag-flow" d="M363,126 C363,62 275,44 166,52" fill="none" stroke="#10b981" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1.5 4" stroke-linecap="round"/>
+<path id="agLink2" class="ag-flow" d="M143,106 L142,180" fill="none" stroke="#10b981" stroke-opacity=".35" stroke-width="1" stroke-dasharray="1.5 4" stroke-linecap="round"/>
+<circle id="agRing" class="ag-ring" cx="363" cy="126" r="2.2" fill="none" stroke="#84cc16" stroke-width="1" vector-effect="non-scaling-stroke" opacity="0"/>
+<circle class="ag-pkt" r="2.1" fill="#84cc16" opacity="0"/><circle class="ag-pkt" r="1.8" fill="#84cc16" opacity="0"/><circle class="ag-pkt" r="1.5" fill="#84cc16" opacity="0"/>
+<g class="ag-panel">
+<rect x="14" y="12" width="152" height="94" rx="8" fill="#08100c" fill-opacity=".8" stroke="#1f2d26"/>
+<rect id="agBorder" x="14" y="12" width="152" height="94" rx="8" fill="none" stroke="#10b981" stroke-opacity=".22"/>
+<circle cx="166" cy="52" r="2.4" fill="#84cc16"/>
+<text x="24" y="27" class="ag-t0">Painel demonstrativo</text>
+<circle class="ag-live" cx="156" cy="23.6" r="1.7" fill="#84cc16"/>
+<path d="M24,33H156" stroke="#1f2d26"/>
+<g fill="none" stroke="#6ee7b7" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5,47 C22,42.5 25.5,40.5 30,40.5 C30,45 27,47.6 22.5,47Z" fill="#10b981" fill-opacity=".45"/><path d="M23,46.6 L28,42"/></g><text x="34" y="48" class="ag-l">Área colhida</text><text x="156" y="48" class="ag-v ag-vals" id="agArea" text-anchor="end">16,8 ha</text>
+<g fill="none" stroke="#6ee7b7" stroke-width="1.3" stroke-linecap="round"><path d="M23,62 V58.5 M26.2,62 V56 M29.4,62 V53.5"/></g><text x="34" y="63" class="ag-l">Produtividade</text><text x="156" y="63" class="ag-v ag-vals" id="agYield" text-anchor="end">~61 sc/ha</text>
+<g fill="none" stroke="#6ee7b7" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="26" cy="74.6" r="3.8"/><path d="M26,72.3 V74.6 L27.6,75.6"/></g><text x="34" y="78" class="ag-l">Progresso</text><text x="156" y="78" class="ag-v ag-vals" id="agProg" text-anchor="end">62%</text>
+<rect x="24" y="85" width="132" height="4" rx="2" fill="#1a2620"/>
+<rect class="ag-bar" id="agBar" x="24" y="85" width="132" height="4" rx="2" fill="#84cc16"/>
+<text x="24" y="100" class="ag-n">Valores ilustrativos</text>
+</g>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<section class="sec github-sec" id="codigo" aria-labelledby="codigoT">
+<h2 class="sr" id="codigoT">Código no GitHub</h2>
+<div class="gh-window rv">
+<div class="gh-bar">
+<span class="dots"><i></i><i></i><i></i></span>
+<span class="gh-url">github.com/matheusvccarvalho</span>
+</div>
+<div class="gh-body">
+<div class="gh-side">
+<img id="ghAv" alt="Avatar GitHub" width="56" height="56" hidden>
+<div>
+<h3 id="ghName">matheusvccarvalho</h3>
+<p class="note">Software Engineer</p>
+</div>
+<div class="langs" id="ghLangs"><span>Python</span><span>Java</span><span>Power BI</span></div>
+<p class="note" id="ghStat"></p>
+<a class="btn primary sm" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">Ver perfil <span>→</span></a>
+</div>
+<div class="gh-main">
+<h4>Repositórios em destaque</h4>
+<ul class="repos" id="ghRepos">
+<li><a href="https://github.com/matheusvccarvalho/Conversor_Arquivos" target="_blank" rel="noopener noreferrer">Conversor_Arquivos <span>Python</span></a></li>
+<li><a href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos" target="_blank" rel="noopener noreferrer">Calculadora_Orcamentos <span>Java</span></a></li>
+<li><a href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Projeto_Shibata <span>Java</span></a></li>
+<li><a href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Gerenciamento_Maquinas <span>Web</span></a></li>
+</ul>
+<div id="ghAct" hidden>
+<h4>Atividade pública recente</h4>
+<div class="heat" id="ghHeat" role="img" aria-label="Mapa de atividade pública recente no GitHub"></div>
+<p class="note" id="ghNote"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="sobre" class="sec">
-  <p class="kicker">// 01 · SOBRE</p>
-  <h2>Tecnologia que resolve <em>problemas reais</em></h2>
-  <div class="about">
-    <div>
-      <p class="mark">Curiosidade → código → resultado.</p>
-      <p>Minha curiosidade por tecnologia começou cedo. Durante a formação em Engenharia de Software, passei a me interessar cada vez mais por dados e desenvolvimento.</p>
-      <p>Aprendo como a análise de dados ajuda a identificar padrões, melhorar processos e apoiar decisões. Hoje evoluo no desenvolvimento de soluções com Python, Java, Power BI e bancos de dados, sempre aberto a novos aprendizados e desafios. Meu diferencial é o interesse pelo agronegócio: é onde mais gosto de aplicar tecnologia e dados.</p>
-      <div class="mission hud"><b>MISSION</b><p>Construir soluções usando tecnologia e dados para resolver problemas reais.</p></div>
-    </div>
-    <div class="terminal hud" id="term" aria-label="Terminal decorativo"><div class="dots"><i></i><i></i><i></i></div><pre id="termOut" aria-hidden="true"></pre></div>
-  </div>
+<p class="kicker">// 01 · SOBRE</p>
+<h2>Tecnologia que resolve <em>problemas reais</em></h2>
+<div class="about">
+<div class="about-text rv">
+<p class="mark">Curiosidade → código → resultado.</p>
+<p>Minha curiosidade por tecnologia começou cedo. Durante a formação em Engenharia de Software, passei a me interessar cada vez mais por dados e desenvolvimento.</p>
+<p>Aprendo como a análise de dados ajuda a identificar padrões, melhorar processos e apoiar decisões. Hoje evoluo no desenvolvimento de soluções com Python, Java, Power BI e bancos de dados, sempre aberto a novos aprendizados e desafios. Meu diferencial é o interesse pelo agronegócio: é onde mais gosto de aplicar tecnologia e dados.</p>
+<div class="mission hud">
+<b>MISSION</b>
+<p>Construir soluções usando tecnologia e dados para resolver problemas reais.</p>
+</div>
+</div>
+<div class="terminal hud rv" id="term" aria-label="Terminal decorativo">
+<div class="dots"><i></i><i></i><i></i></div>
+<pre id="termOut" aria-hidden="true"></pre>
+</div>
+</div>
 </section>
-
 <section id="jornada" class="sec">
-  <p class="kicker">// 02 · JORNADA</p>
-  <h2>Minha jornada <em>até aqui</em></h2>
-  <ol class="path">
-    <li class="rv"><b>2024</b><h3>Primeiras experiências</h3><p>Summit UMC 2024, com desenvolvimento e apresentação de software.</p></li>
-    <li class="rv"><b>2025</b><h3>Dados + tecnologia</h3><p>Vision Tech em Ribeirão Preto e Summit UMC 2025, aproximando dados, IA e agronegócio.</p></li>
-    <li class="rv"><b>2026</b><h3>AgroTech + desenvolvimento</h3><p>Agrishow 2026, programa START da TOTVS e projetos que unem dados, software e campo.</p></li>
-  </ol>
-
-  <h3 class="sub">Momentos que marcaram minha jornada</h3>
-  <div class="story">
-    <article class="moment rv">
-      <img src="assets/momentos/apresentacao_ia.jpg" alt="Apresentação sobre o software de gestão de estoque" loading="lazy">
-      <div><span class="tag">1º ano · Software</span><h3>Apresentação sobre Software de Gestão de Estoque</h3>
-      <p>No primeiro ano da faculdade, apresentei nosso software de automação e gerenciamento de estoque com RFID (Radio Frequency Identification) e IoT (Internet das Coisas), otimizando processos logísticos e mantendo a organização dos clientes com tecnologia. Foi uma grande oportunidade de atuar como Product Owner do projeto e reforçou meu interesse pela área.</p></div>
-    </article>
-    <article class="moment rv">
-      <img src="assets/momentos/ribeirao.jpg" alt="Vision Tech em Ribeirão Preto" loading="lazy">
-      <div><span class="tag">2025 · Evento</span><h3>Viagem Técnica para Ribeirão Preto / Vision Tech</h3>
-      <p>Em 2025, viajei sozinho da Zona Leste de São Paulo até Ribeirão Preto para o Vision Tech, evento de inovação, tecnologia e dados aplicados ao agronegócio. Acompanhei palestras sobre análise de dados, inteligência artificial e IoT para otimizar a produção no campo e apoiar decisões no setor agro.</p></div>
-    </article>
-    <article class="moment rv">
-      <img src="assets/momentos/prefeitura.jpg" alt="Carta de reconhecimento da Prefeitura de Suzano" loading="lazy">
-      <div><span class="tag">Reconhecimento</span><h3>Reconhecimento da Prefeitura de Suzano</h3>
-      <p>Recebi uma carta de reconhecimento pela dedicação e pelo comprometimento ao longo da minha trajetória profissional, atendendo com seriedade e empenho mais de 1000 cidadãos suzanenses e empresas municipais na regularização de dívidas.</p></div>
-    </article>
-    <article class="moment rv">
-      <img src="assets/momentos/agrishow.jpg" alt="Agrishow 2026" loading="lazy">
-      <div><span class="tag">2026 · AgroTech</span><h3>Experiência na Agrishow 2026</h3>
-      <p>A Agrishow 2026 foi um marco profissional e pessoal. Vivenciei de perto as inovações do agronegócio, acompanhando empresas como John Deere, Case IH, Massey Ferguson e Jacto, e observei como dados, automação e tecnologia transformam o campo, de máquinas conectadas a soluções inteligentes de gestão agrícola. Isso fortaleceu meu interesse em unir tecnologia e agro, com foco em análise de dados.</p></div>
-    </article>
-  </div>
+<p class="kicker">// 02 · JORNADA</p>
+<h2>Minha jornada <em>até aqui</em></h2>
+<ol class="path rv">
+<li><b>2024</b><h3>Primeiras experiências</h3><p>Summit UMC 2024, com desenvolvimento e apresentação de software.</p></li>
+<li><b>2025</b><h3>Dados + tecnologia</h3><p>Vision Tech em Ribeirão Preto e Summit UMC 2025, aproximando dados, IA e agronegócio.</p></li>
+<li><b>2026</b><h3>AgroTech + desenvolvimento</h3><p>Agrishow 2026, programa START da TOTVS e projetos que unem dados, software e campo.</p></li>
+</ol>
+<h3 class="sub rv">Momentos que marcaram minha jornada</h3>
+<div class="story">
+<article class="moment rv">
+<div class="moment-img-wrapper">
+<img src="assets/momentos/apresentacao_ia.jpg" alt="Apresentação sobre o software de gestão de estoque" loading="lazy">
+</div>
+<div class="moment-content">
+<span class="step">01</span>
+<span class="tag">1º ano · Software</span>
+<h3>Apresentação sobre Software de Gestão de Estoque</h3>
+<p>No primeiro ano da faculdade, apresentei nosso software de automação e gerenciamento de estoque com RFID e IoT, otimizando processos logísticos. Foi uma grande oportunidade de atuar como Product Owner do projeto.</p>
+</div>
+</article>
+<article class="moment rv">
+<div class="moment-img-wrapper">
+<img src="assets/momentos/ribeirao.jpg" alt="Vision Tech em Ribeirão Preto" loading="lazy">
+</div>
+<div class="moment-content">
+<span class="step">02</span>
+<span class="tag">2025 · Evento</span>
+<h3>Viagem Técnica para Ribeirão Preto / Vision Tech</h3>
+<p>Em 2025, viajei sozinho da Zona Leste de São Paulo até Ribeirão Preto para o Vision Tech, evento de inovação, tecnologia e dados aplicados ao agronegócio. Acompanhei palestras sobre análise de dados, IA e IoT.</p>
+</div>
+</article>
+<article class="moment rv">
+<div class="moment-img-wrapper">
+<img src="assets/momentos/prefeitura.jpg" alt="Carta de reconhecimento da Prefeitura de Suzano" loading="lazy">
+</div>
+<div class="moment-content">
+<span class="step">03</span>
+<span class="tag">Reconhecimento</span>
+<h3>Reconhecimento da Prefeitura de Suzano</h3>
+<p>Recebi uma carta de reconhecimento pela dedicação e pelo comprometimento ao longo da minha trajetória profissional, atendendo com seriedade e empenho mais de 1000 cidadãos suzanenses e empresas municipais.</p>
+</div>
+</article>
+<article class="moment rv">
+<div class="moment-img-wrapper">
+<img src="assets/momentos/agrishow.jpg" alt="Agrishow 2026" loading="lazy">
+</div>
+<div class="moment-content">
+<span class="step">04</span>
+<span class="tag">2026 · AgroTech</span>
+<h3>Experiência na Agrishow 2026</h3>
+<p>A Agrishow 2026 foi um marco profissional e pessoal. Vivenciei de perto as inovações do agronegócio, acompanhando empresas como John Deere e TOTVS , e observei como dados e automação transformam o campo.</p>
+</div>
+</article>
+</div>
 </section>
-
 <section id="projetos" class="sec">
-  <p class="kicker">// 03 · PROJETOS</p>
-  <h2>Projetos que parecem <em>produtos</em></h2>
-  <div class="grid">
-    <article class="card rv"><img src="assets/projetos/conversor.jpg" alt="Conversor de arquivos" loading="lazy"><div class="cb"><div class="cats"><span>AUTOMATION</span><span>SOFTWARE</span></div><h3>Conversor de Arquivos</h3><p>Conversor multifuncional inspirado no SmallPDF: transforma PDFs em Word e Excel e manipula arquivos ZIP, com interface moderna, temas personalizados e foco em produtividade.</p><div class="tt"><span>PDF</span><span>Word</span><span>Excel</span><span>ZIP</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Conversor_Arquivos/releases/tag/1.0" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
-    <article class="card rv"><img src="assets/projetos/sistema_orcamento.jpg" alt="Sistema de orçamento automotivo" loading="lazy"><div class="cb"><div class="cats"><span>BUSINESS</span><span>AUTOMATION</span></div><h3>Sistema de Orçamento Automotivo</h3><p>Integrado com Cilia e Audatex, calcula valores automaticamente, analisa percentuais e organiza serviços, com foco em agilidade e clareza para o usuário.</p><div class="tt"><span>Cilia</span><span>Audatex</span><span>Cálculo automático</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos/releases" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
-    <article class="card rv"><img src="assets/projetos/dashboard_johndeere.jpg" alt="Dashboard John Deere" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>DATA</span></div><h3>Dashboard de Vendas John Deere</h3><p>Dashboard inspirado na John Deere para analisar o desempenho de máquinas agrícolas, com ranking Top 5, indicadores de faturamento e visual moderno voltado ao agronegócio.</p><div class="tt"><span>Dashboard</span><span>Top 5</span><span>Faturamento</span></div><a class="btn sm" href="https://lnkd.in/dgAeuK5v" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a></div></article>
-    <article class="card rv"><img src="assets/projetos/estoque.jpg" alt="Sistema de gestão de estoque" loading="lazy"><div class="cb"><div class="cats"><span>DEVELOPMENT</span><span>SOFTWARE</span></div><h3>Sistema de Gestão de Estoque</h3><p>Desenvolvido em Java com CRUD completo (cadastro, consulta, atualização e exclusão), integração com banco de dados e foco em organização e controle de produtos.</p><div class="tt"><span>Java</span><span>CRUD</span><span>Banco de dados</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
-    <article class="card rv"><img src="assets/projetos/agro_marketplace.jpg" alt="Gerenciamento de máquinas agrícolas" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>SOFTWARE</span></div><h3>Gerenciamento de Máquinas Agrícolas</h3><p>Sistema web para uma pequena concessionária de tratores, com arquitetura MVC e padrão DAO. Controla estoque, status de vendas e organização das máquinas.</p><div class="tt"><span>Web</span><span>MVC</span><span>DAO</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
-    <article class="card rv"><img src="assets/projetos/agrishow_apresentacao.jpg" alt="Projeto Agrishow 2026" loading="lazy"><div class="cb"><div class="cats"><span>AGROTECH</span><span>DATA</span></div><h3>Projeto Agrishow 2026</h3><p>Apresentação com análises e insights da Agrishow 2026, explorando tendências, tecnologia e uso de dados no agronegócio.</p><div class="tt"><span>Dados</span><span>Tendências</span><span>Agronegócio</span></div><a class="btn sm" href="https://github.com/matheusvccarvalho/Agrishow-/blob/main/Agrishow%202026/Projeto%20Agrishow%202026.pdf" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
-  </div>
+<p class="kicker">// 03 · PROJETOS</p>
+<h2>Projetos que parecem <em>produtos</em></h2>
+<div class="grid">
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/conversor.jpg" alt="Conversor de arquivos" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>AUTOMATION</span><span>SOFTWARE</span></div>
+<h3>Conversor de Arquivos</h3>
+<p>Conversor multifuncional inspirado no SmallPDF: transforma PDFs em Word e Excel e manipula arquivos ZIP, com interface moderna e foco em produtividade.</p>
+<div class="tt"><span>PDF</span><span>Word</span><span>Excel</span><span>ZIP</span></div>
+<a class="btn sm outline" href="https://github.com/matheusvccarvalho/Conversor_Arquivos/releases/tag/1.0" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+</div>
+</article>
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/sistema_orcamento.jpg" alt="Sistema de orçamento automotivo" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>BUSINESS</span><span>AUTOMATION</span></div>
+<h3>Sistema de Orçamento Automotivo</h3>
+<p>Integrado com Cilia e Audatex, calcula valores automaticamente, analisa percentuais e organiza serviços, com foco em agilidade e clareza para o usuário.</p>
+<div class="tt"><span>Cilia</span><span>Audatex</span><span>Cálculo</span></div>
+<a class="btn sm outline" href="https://github.com/matheusvccarvalho/Calculadora_Orcamentos/releases" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+</div>
+</article>
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/dashboard_johndeere.jpg" alt="Dashboard John Deere" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>AGROTECH</span><span>DATA</span></div>
+<h3>Dashboard de Vendas John Deere</h3>
+<p>Dashboard para analisar o desempenho de máquinas agrícolas, com ranking Top 5, indicadores de faturamento e visual moderno voltado ao agronegócio.</p>
+<div class="tt"><span>Dashboard</span><span>Top 5</span><span>Faturamento</span></div>
+<a class="btn sm outline" href="https://lnkd.in/dgAeuK5v" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+</div>
+</article>
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/estoque.jpg" alt="Sistema de gestão de estoque" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>DEVELOPMENT</span><span>SOFTWARE</span></div>
+<h3>Sistema de Gestão de Estoque</h3>
+<p>Desenvolvido em Java com CRUD completo (cadastro, consulta, atualização e exclusão), integração com banco de dados e foco em organização.</p>
+<div class="tt"><span>Java</span><span>CRUD</span><span>SQL</span></div>
+<a class="btn sm outline" href="https://github.com/matheusvccarvalho/Projeto_Shibata" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+</div>
+</article>
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/agro_marketplace.jpg" alt="Gerenciamento de máquinas agrícolas" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>AGROTECH</span><span>SOFTWARE</span></div>
+<h3>Gerenciamento de Máquinas Agrícolas</h3>
+<p>Sistema web para uma pequena concessionária de tratores, com arquitetura MVC e padrão DAO. Controla estoque, status de vendas e organização.</p>
+<div class="tt"><span>Web</span><span>MVC</span><span>DAO</span></div>
+<a class="btn sm outline" href="https://github.com/matheusvccarvalho/Projeto_Gerenciamento_Maquinas" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+</div>
+</article>
+<article class="card rv">
+<div class="card-img"><img src="assets/projetos/agrishow_apresentacao.jpg" alt="Projeto Agrishow 2026" loading="lazy"></div>
+<div class="cb">
+<div class="cats"><span>AGROTECH</span><span>DATA</span></div>
+<h3>Projeto Agrishow 2026</h3>
+<p>Apresentação com análises e insights da Agrishow 2026, explorando tendências, tecnologia e uso de dados no agronegócio.</p>
+<div class="tt"><span>Dados</span><span>Tendências</span><span>Agro</span></div>
+<a class="btn sm outline" href="https://github.com/matheusvccarvalho/Agrishow-/blob/main/Agrishow%202026/Projeto%20Agrishow%202026.pdf" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+</div>
+</article>
+</div>
 </section>
-
 <section id="skills" class="sec">
-  <p class="kicker">// 04 · TECH STACK</p>
-  <h2>Ferramentas que <em>utilizo</em></h2>
-  <div class="stack">
-    <div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/python.png" alt="" loading="lazy"><h3>Python</h3><p>Análise de dados e automação.</p></div>
-    <div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/java.png" alt="" loading="lazy"><h3>Java</h3><p>Sistemas com MVC, DAO e CRUD.</p></div>
-    <div class="tech rv"><span class="cat">DATA</span><img src="assets/skills/pandas.png" alt="" loading="lazy"><h3>Pandas</h3><p>Manipulação e análise de dados.</p></div>
-    <div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/powerbi.png" alt="" loading="lazy"><h3>Power BI</h3><p>Dashboards e indicadores.</p></div>
-    <div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/excel.png" alt="" loading="lazy"><h3>Excel</h3><p>Planilhas e análise de dados.</p></div>
-    <div class="tech rv"><span class="cat">DATABASE</span><img src="assets/skills/mysql.png" alt="" loading="lazy"><h3>MySQL</h3><p>Bancos de dados relacionais.</p></div>
-    <div class="tech rv"><span class="cat">AI</span><img src="assets/skills/ibm.png" alt="" loading="lazy"><h3>IBM / IA</h3><p>Fundamentos de inteligência artificial.</p></div>
-  </div>
+<p class="kicker">// 04 · TECH STACK</p>
+<h2>Ferramentas que <em>utilizo</em></h2>
+<div class="stack">
+<div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/python.png" alt="Python" loading="lazy"><h3>Python</h3><p>Análise de dados e automação.</p></div>
+<div class="tech rv"><span class="cat">PROGRAMMING</span><img src="assets/skills/java.png" alt="Java" loading="lazy"><h3>Java</h3><p>Sistemas com MVC, DAO e CRUD.</p></div>
+<div class="tech rv"><span class="cat">DATA</span><img src="assets/skills/pandas.png" alt="Pandas" loading="lazy"><h3>Pandas</h3><p>Manipulação e análise de dados.</p></div>
+<div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/powerbi.png" alt="Power BI" loading="lazy"><h3>Power BI</h3><p>Dashboards e indicadores.</p></div>
+<div class="tech rv"><span class="cat">BUSINESS INTELLIGENCE</span><img src="assets/skills/excel.png" alt="Excel" loading="lazy"><h3>Excel</h3><p>Planilhas e análise de dados.</p></div>
+<div class="tech rv"><span class="cat">DATABASE</span><img src="assets/skills/mysql.png" alt="MySQL" loading="lazy"><h3>MySQL</h3><p>Bancos de dados relacionais.</p></div>
+<div class="tech rv"><span class="cat">AI</span><img src="assets/skills/ibm.png" alt="IBM / IA" loading="lazy"><h3>IBM / IA</h3><p>Fundamentos de inteligência artificial.</p></div>
+</div>
 </section>
-
 <section id="certificados" class="sec">
-  <p class="kicker">// 05 · CERTIFICADOS</p>
-  <h2>Evolução em <em>constante movimento</em></h2>
-  <div class="filters" role="group" aria-label="Filtrar certificados">
-    <button class="on" data-f="all">Todos</button><button data-f="data">Data</button><button data-f="ia">IA</button><button data-f="dev">Desenvolvimento</button><button data-f="auto">Automação</button><button data-f="office">Office</button><button data-f="evento">Eventos</button>
-  </div>
-  <ul class="certs" id="certs">
-    <li data-c="dev"><a href="assets/certificados/python.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Python</a></li>
-    <li data-c="data"><a href="assets/certificados/powerbi.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Power BI</a></li>
-    <li data-c="auto"><a href="assets/certificados/automacao.pdf" target="_blank" rel="noopener noreferrer"><small>AUTOMAÇÃO</small>Automação</a></li>
-    <li data-c="ia"><a href="assets/certificados/googleia.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Google AI Foundations</a></li>
-    <li data-c="office"><a href="assets/certificados/pacoteoffice.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Pacote Office</a></li>
-    <li data-c="evento dev"><a href="assets/certificados/summit2024.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2024 – Desenvolvimento e Apresentação de Software</a></li>
-    <li data-c="evento dev"><a href="assets/certificados/summit2025.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2025 – Desenvolvimento e Apresentação de Software</a></li>
-    <li data-c="data office"><a href="assets/certificados/ExcelAnalysis.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Excel Fundamentals for Data Analysis</a></li>
-    <li data-c="office"><a href="assets/certificados/ExcelBasico.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Excel Básico</a></li>
-    <li data-c="evento data"><a href="assets/certificados/VisionAgro.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Vision Tech Summit Agro 2025</a></li>
-    <li data-c="ia"><a href="assets/certificados/ibm.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Introduction to Artificial Intelligence (AI) – IBM</a></li>
-    <li data-c="ia"><a href="assets/certificados/iagoogle.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>AI Fundamentals – Google</a></li>
-    <li data-c="dev"><a href="assets/certificados/totvs.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Programa START 2026 – Jornada DEV Negócios – TOTVS Paulista</a></li>
-  </ul>
+<p class="kicker">// 05 · CERTIFICADOS</p>
+<h2>Evolução em <em>constante movimento</em></h2>
+<div class="filters" role="group" aria-label="Filtrar certificados">
+<button type="button" class="on" aria-pressed="true" data-f="all">Todos</button>
+<button type="button" aria-pressed="false" data-f="data">Data</button>
+<button type="button" aria-pressed="false" data-f="ia">IA</button>
+<button type="button" aria-pressed="false" data-f="dev">Desenvolvimento</button>
+<button type="button" aria-pressed="false" data-f="auto">Automação</button>
+<button type="button" aria-pressed="false" data-f="office">Office</button>
+<button type="button" aria-pressed="false" data-f="evento">Eventos</button>
+<button type="button" aria-pressed="false" data-f="softskills">Soft Skills</button>
+</div>
+<p class="sr" id="certCount" role="status" aria-live="polite"></p>
+<ul class="certs" id="certs">
+<li data-c="dev"><a href="assets/certificados/python.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Python</a></li>
+<li data-c="data"><a href="assets/certificados/powerbi.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Power BI</a></li>
+<li data-c="auto"><a href="assets/certificados/automacao.pdf" target="_blank" rel="noopener noreferrer"><small>AUTOMAÇÃO</small>Automação</a></li>
+<li data-c="ia"><a href="assets/certificados/googleia.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Google AI Foundations</a></li>
+<li data-c="office"><a href="assets/certificados/pacoteoffice.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Pacote Office</a></li>
+<li data-c="evento dev"><a href="assets/certificados/summit2024.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2024 – Desenvolvimento e Apresentação de Software</a></li>
+<li data-c="evento dev"><a href="assets/certificados/summit2025.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Summit UMC 2025 – Desenvolvimento e Apresentação de Software</a></li>
+<li data-c="data office"><a href="assets/certificados/ExcelAnalysis.pdf" target="_blank" rel="noopener noreferrer"><small>DATA</small>Excel Fundamentals for Data Analysis</a></li>
+<li data-c="office"><a href="assets/certificados/ExcelBasico.pdf" target="_blank" rel="noopener noreferrer"><small>OFFICE</small>Excel Básico</a></li>
+<li data-c="evento data"><a href="assets/certificados/VisionAgro.pdf" target="_blank" rel="noopener noreferrer"><small>EVENTO</small>Vision Tech Summit Agro 2025</a></li>
+<li data-c="ia"><a href="assets/certificados/ibm.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>Introduction to Artificial Intelligence (AI) – IBM</a></li>
+<li data-c="ia"><a href="assets/certificados/iagoogle.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>AI Fundamentals – Google</a></li>
+<li data-c="dev"><a href="assets/certificados/totvs.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>Programa START 2026 – Jornada DEV Negócios – TOTVS Paulista</a></li>
+<li data-c="dev"><a href="assets/certificados/servicenow_csa.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>SENAI: Administração de Sistemas ServiceNow - CSA</a></li>
+<li data-c="ia"><a href="assets/certificados/chatgpt_programacao.pdf" target="_blank" rel="noopener noreferrer"><small>IA</small>SENAI: Inteligências Artificiais Generativas Aplicada à Programação - ChatGPT</a></li>
+<li data-c="dev"><a href="assets/certificados/servicenow_micro.pdf" target="_blank" rel="noopener noreferrer"><small>DEV</small>ServiceNow: Microcertificação - Bem-vindo ao ServiceNow</a></li>
+<li data-c="softskills"><a href="assets/certificados/alura_inovacao.pdf" target="_blank" rel="noopener noreferrer"><small>SOFT SKILLS</small>Inovação: Identificando oportunidades e estruturando ideias</a></li>
+<li data-c="softskills"><a href="assets/certificados/alura_comunicacao.pdf" target="_blank" rel="noopener noreferrer"><small>SOFT SKILLS</small>Comunicação assertiva: Reduzindo conflitos e frustrações</a></li>
+<li data-c="softskills"><a href="assets/certificados/alura_produtividade.pdf" target="_blank" rel="noopener noreferrer"><small>SOFT SKILLS</small>Produtividade parte 2: Organização e Prioridade</a></li>
+</ul>
 </section>
-
 <section id="busco" class="sec">
-  <p class="kicker">// 06 · DIREÇÃO</p>
-  <h2>Construindo minha <em>próxima etapa</em></h2>
-  <div class="dir"><span>Desenvolvimento</span><span>Dados</span><span>IA</span><span>Automação</span><span>AgroTech</span></div>
-  <p class="center muted">Estou em constante evolução: transformando problemas em soluções e aprendendo a cada projeto.</p>
+<p class="kicker">// 06 · DIREÇÃO</p>
+<h2>Construindo minha <em>próxima etapa</em></h2>
+<div class="dir"><span>Desenvolvimento</span><span>Dados</span><span>IA</span><span>Automação</span><span>Java</span></div>
+<p class="center muted">Estou em constante evolução: transformando problemas em soluções e aprendendo a cada projeto.</p>
 </section>
-
 <section id="contato" class="sec contact">
-  <p class="kicker">// 07 · CONTATO</p>
-  <h2>Vamos transformar dados em <em>possibilidades?</em></h2>
-  <div class="links">
-    <a class="btn primary" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-    <a class="btn" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-    <a class="btn" href="mailto:matheusccarvalhoads@gmail.com">matheusccarvalhoads@gmail.com</a>
-  </div>
+<p class="kicker">// 07 · CONTATO</p>
+<h2>Vamos transformar dados em <em>possibilidades?</em></h2>
+<div class="links">
+<a class="btn primary" href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+<a class="btn outline" href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<a class="btn outline" href="mailto:matheusccarvalhoads@gmail.com">matheusccarvalhoads@gmail.com</a>
+</div>
 </section>
 </main>
-
 <footer class="foot">
-  <div><b>Matheus Vinicius Carvalho</b><span>Software Engineer | Data | AI | AgroTech</span></div>
-  <div class="fl"><a href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:matheusccarvalhoads@gmail.com">Email</a></div>
-  <small>© 2026</small>
+<div><b>Matheus Vinicius Carvalho</b><span>Software Engineer | Data | AI | Java</span></div>
+<div class="fl"><a href="https://github.com/matheusvccarvalho" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/matheus-vinicius-carvalho-26485122a" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:matheusccarvalhoads@gmail.com">Email</a></div>
+<small>© 2026</small>
 </footer>
-
-<dialog id="why" aria-labelledby="whyT"><h3 id="whyT">Por que AgroTech?</h3><p>Porque tecnologia faz sentido quando resolve problemas reais. Não escolhi entre tecnologia e agro: quero usar uma para transformar o outro.</p><button class="btn sm" id="whyClose">Fechar</button></dialog>
-<script src="script.js"></script>
+<dialog id="why" aria-labelledby="whyT">
+<h3 id="whyT">Por que AgroTech?</h3>
+<p>Porque tecnologia faz sentido quando resolve problemas reais. Não escolhi entre tecnologia e agro: quero usar uma para transformar o outro.</p>
+<button class="btn sm outline" id="whyClose">Fechar</button>
+</dialog>
 </body>
 </html>
